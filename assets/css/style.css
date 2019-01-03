@@ -103,6 +103,10 @@ html, body{
 .card.h-100{
     box-shadow: 1px 0px 7px #8888887d;
 }
+.btn-group-custom button{
+    margin-bottom: 0.5rem;
+    width: 100px;
+}
 
 
 /* Section Footer */
@@ -235,7 +239,10 @@ li.inverted > .timeline-card{
     }
     .timeline-arrow{
         text-align: left;
-        left: 32px;
+        left: 0px;
+    }
+    .timeline-arrow  > i{
+        margin-left: 32px;
     }
 }
 
