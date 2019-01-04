@@ -24,15 +24,16 @@ html, body{
     position: relative;
     padding: 20px;
     margin-bottom: 25px;
+    text-align: center;
 }
 .border-short-bottom::after{
     position: absolute;
     content: "";
-    width: 200px;
+    width: 100px;
     height: 2px;
     bottom: 0;
     left: 50%;
-    margin-left: -100px;
+    margin-left: -50px;
     background: #595959;
 }
 @media (max-width: 768px){
