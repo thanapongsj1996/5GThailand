@@ -49,7 +49,7 @@
 
     <!-- Section PageTitle -->
     <header class="jarallax" data-jarallax='{"speed": 0.1}' style="background-image: url(https://s26913.pcdn.co/wp-content/uploads/2018/07/AdobeStock_192398715-1024x440.jpeg);">
-        <div class="blog-image">
+        <div class="page-image">
             <h1 class="display-4 font-weight-bold">HTML คืออะไร</h1>
             <p class="lead">"5G Thailand ความรู้ไร้ขีดจำกัด"</p>
         </div>
@@ -236,12 +236,36 @@
         All Right Reserved
     </footer>
 
+    <!-- Section On to Top -->
+    <div class="to-top">
+        <i class="fa fa-angle-up" aria-hidden="true"></i>
+    </div>
+
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/jarallax/dist/jarallax.min.js"></script>
     <script src="/node_modules/owl.carousel/dist/owl.carousel.min.js"></script>
     <script src="assets/js/main.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.owl-carousel').owlCarousel({
+                loop: true,
+                nav: false,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    600: {
+                        items: 2
+                    },
+                    1000: {
+                        items: 3
+                    }
+                }
+            });
+        });
+    </script>
 </body>
 
 </html>

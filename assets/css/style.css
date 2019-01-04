@@ -47,6 +47,12 @@ html, body{
      padding: 10px;
      transition: 0.5s;
  }
+ @media(max-width: 480px){
+    .navbar-brand{
+        font-size: 0.8rem;
+        line-height: 2rem;
+    }
+ }
 
 /* Section Carousel */
 .carousel,
@@ -108,15 +114,14 @@ html, body{
     margin-bottom: 0.5rem;
     width: 100px;
 }
-.blog-image{
-    padding: 200px 0 120px;
-    text-align: center;
-    color: #E6E6E6;
-    background: rgba(0, 0, 0, 0.5);
-}
+
 .blog-content{
     padding: 50px 100px;
     box-shadow: 0px 0px 10px #a5a5a5;
+}
+.owl-carousel .card-body{
+    height: 150px;
+    overflow: hidden;
 }
 @media(max-width: 991px){
     .blog-content{
@@ -153,12 +158,11 @@ html, body{
 }
 
 /* Section Page-title */
-.page-title{
-    position: relative;
-    display: block;
-    padding-top: 250px;
-    padding-bottom: 100px;
-    color: #D8D8D8;
+.page-image{
+    padding: 200px 0 120px;
+    text-align: center;
+    color: #E6E6E6;
+    background: rgba(0, 0, 0, 0.5);
 }
 
 /* Section Timeline */
@@ -279,4 +283,23 @@ li.inverted > .timeline-card{
     top: 0;
     white-space: nowrap;
     overflow: hidden;
+}
+/* Section On to Top */
+.to-top{
+    position: fixed;
+    bottom: 2%;
+    right: 2%;
+    width: 40px;
+    height: 40px;
+    color: #FFFFFF;
+    background: #595959;
+    z-index: 9999;
+    border-radius: 50%;
+    font-size: 25px;
+    cursor: pointer;
+    text-align: center;
+}
+.to-top:hover{
+    color: #FFFFFF;
+    background: #414040;
 }
