@@ -5,47 +5,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>5G Thailand</title>
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicons/favicon-16x16.png">
+    <link rel="manifest" href="assets/images/favicons/site.webmanifest">
+    <link rel="mask-icon" href="assets/images/favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="assets/images/favicons/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="assets/images/favicons/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- CSS -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="node_modules/owl.carousel/dist/assets/owl.carousel.min.css" />
     <link rel="stylesheet" href="node_modules/owl.carousel/dist/assets/owl.theme.default.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Prompt">
     <link rel="stylesheet" href="assets/css/style.css">
-    <title>Contact</title>
+    
 </head>
 
 <body>
     <!-- Section Navbar -->
-    <nav id="navbar" class="navbar navbar-expand-lg fixed-top navbar-dark bg-alpha">
-        <div class="container">
-            <a class="navbar-brand" href="index.html">
-                <img src="https://www.eng.chula.ac.th/wp-content/uploads/2018/01/logo.png" width="35" height="35" class="d-inline-block align-top"
-                    alt="">
-                5G Thailand
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarKey" aria-controls="navbarKey"
-                aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarKey">
-                <ul class="navbar-nav ml-auto text-center">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="about.html">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="blog.html">Blog</a>
-                    </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="contact.html">Contact</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+    <?php include_once('include/navbar.php') ?>
 
     <!-- Section PageTitle -->
     <header class="jarallax" data-jarallax='{"speed": 0.1}' style="background-image: url(https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/3b024f34512061.56d3e5b9612a4.jpg);">
@@ -129,7 +114,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-12 text-center">
-                    <img src="assets/image/logo_engineering.png" class="img-fluid" width="150px">
+                    <img src="assets/images/logo_engineering.png" class="img-fluid" width="150px">
                     <h2 class="text-white display-4 font-weight-bold">5G Thailand</h2>
                     <div class="star-rating">
                         <span>☆</span>
@@ -246,7 +231,7 @@
                 if (captchaResized == false) captchaResized = true;
             }
         }
-        // resizeCaptcha();
+       
     </script>
 </body>
 
