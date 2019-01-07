@@ -1,7 +1,11 @@
 <?php
-    require_once 'php/connect.php';
-    $sql = "SELECT * FROM articles";
-    $result = $conn->query($sql) or die($conn->error);
+require_once 'php/connect.php';
+$tag = isset($_GET['tag']) ? $_GET['tag'] : 'all';
+$sql = "SELECT * FROM `articles` WHERE `tag` LIKE '%".$tag."%' AND `status` = 'true'";
+$result = $conn->query($sql);
+if(!$result){
+    header('Location: blog.php');
+}
 ?>
 
 <!DOCTYPE html>
@@ -49,21 +53,33 @@
         <div class="row pb-4">
             <div class="col-12 text-center">
                 <div class="btn-group-custom">
-                    <button class="btn btn-primary">ทั้งหมด</button>
-                    <button class="btn btn-primary">HTML</button>
-                    <button class="btn btn-primary">CSS</button>
-                    <button class="btn btn-primary">Javascript</button>
-                    <button class="btn btn-primary">PHP</button>
-                    <button class="btn btn-primary">MySQL</button>
+                    <a href="blog.php?tag=all">
+                        <button class="btn btn-primary <?php echo $tag == 'all' ? 'active':'' ?>">ทั้งหมด</button>
+                    </a>
+                    <a href="blog.php?tag=html">
+                        <button class="btn btn-primary <?php echo $tag == 'html' ? 'active':'' ?>">HTML</button>
+                    </a>
+                    <a href="blog.php?tag=css">
+                        <button class="btn btn-primary <?php echo $tag == 'css' ? 'active':'' ?>">CSS</button>
+                    </a>
+                    <a href="blog.php?tag=5g">
+                        <button class="btn btn-primary <?php echo $tag == '5g' ? 'active':'' ?>">5G</button>
+                    </a>
+                    <a href="blog.php?tag=6g">
+                        <button class="btn btn-primary <?php echo $tag == '6g' ? 'active':'' ?>">6G</button>
+                    </a>
                 </div>
             </div>
         </div>
         <div class="row">
-            <?php while($row = $result->fetch_assoc()) { ?>
+            <?php 
+                if($result->num_rows){
+                while ($row = $result->fetch_assoc()) {
+            ?>
                 <section class="col-12 col-sm-6 col-md-4 p-2">
                     <div class="card h-100">
                         <a href="blog-detail.php?id=<?php echo $row['id'] ?>" class="warpper-card-img">
-                            <img class="card-img-top" src="<?php echo $row['image'] ?>" alt="Card image cap">
+                            <img class="card-img-top" src="<?php echo $base_path_blog.$row['image'] ?>" alt="Card image cap">
                         </a>
                         <div class="card-body">
                             <h5 class="card-title"><?php echo $row['subject'] ?></h5>
@@ -74,9 +90,17 @@
                         </div>
                     </div>
                 </section>
+            <?php }
+            } else {
+            ?>
+            <section class="col-12">
+                <p class="text-center">ไม่มีข้อมูล</p>
+            </section>
             <?php } ?>
         </div>
     </section>
+
+    
 
     <!-- Section Footer -->
     <?php include_once 'include/footer.php'?>

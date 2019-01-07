@@ -1,5 +1,6 @@
 <?php 
     error_reporting(E_ALL);
+    
     //error_reporting(0); //การปิด error ไว้ใช้ตอนเขียน error เอง
     //connect to database
     $conn = new mysqli('localhost', 'root', '', 'blog');
@@ -9,5 +10,5 @@
         echo "Connect error : ".$conn->connect_error;
         exit();
     }
-
+    $base_path_blog = 'assets/images/blog/';
 ?>

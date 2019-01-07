@@ -114,6 +114,9 @@ html, body{
     margin-bottom: 0.5rem;
     width: 100px;
 }
+.btn-group-custom a:hover{
+    text-decoration: none;
+}
 
 .blog-content{
     padding: 50px 100px;
