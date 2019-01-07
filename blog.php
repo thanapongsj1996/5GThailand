@@ -1,3 +1,9 @@
+<?php
+    require_once 'php/connect.php';
+    $sql = "SELECT * FROM articles";
+    $result = $conn->query($sql) or die($conn->error);
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -23,15 +29,15 @@
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Prompt">
     <link rel="stylesheet" href="assets/css/style.css">
- 
+
 </head>
 
 <body>
     <!-- Section Navbar -->
-    <?php include_once('include/navbar.php') ?>
+    <?php include_once 'include/navbar.php'?>
 
     <!-- Section PageTitle -->
-    <header class="jarallax" data-jarallax='{"speed": 0.1}' style="background-image: url(https://images.unsplash.com/photo-1512699126689-b59fb4e97c92?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80);">
+    <header class="jarallax" data-jarallax='{"speed": 0.3}' style="background-image: url(https://images.unsplash.com/photo-1512699126689-b59fb4e97c92?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80);">
         <div class="page-image">
             <h1 class="display-4 font-weight-bold">บทความ</h1>
             <p class="lead">"5G Thailand ความรู้ไร้ขีดจำกัด"</p>
@@ -53,167 +59,27 @@
             </div>
         </div>
         <div class="row">
-            <section class="col-12 col-sm-6 col-md-4 p-2">
-                <div class="card h-100">
-                    <a href="blog-detail.php" class="warpper-card-img">
-                        <img class="card-img-top" src="https://udemy-images.udemy.com/course/750x422/913966_ed60_2.jpg"
-                            alt="Card image cap">
-                    </a>
-                    <div class="card-body">
-                        <h5 class="card-title">HTML คืออะไร</h5>
-                        <p class="card-text">"5G Thailand ความรู้ไร้ขีดจำกัด"</p>
-                    </div>
-                    <div class="p-3">
-                        <a href="blog-detail.php" class="btn btn-block blogbotton">อ่านเพิ่มเติม</a>
-                    </div>
-                </div>
-            </section>
-            <section class="col-12 col-sm-6 col-md-4 p-2">
-                <div class="card h-100">
-                    <a href="#" class="warpper-card-img">
-                        <img class="card-img-top" src="assets/images/img2.jpeg" alt="Card image cap"></a>
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up </p>
-                    </div>
-                    <div class="p-3">
-                        <a href="#" class="btn btn-block blogbotton">อ่านเพิ่มเติม</a>
-                    </div>
-                </div>
-            </section>
-            <section class="col-12 col-sm-6 col-md-4 p-2">
-                <div class="card h-100">
-                    <a href="#" class="warpper-card-img">
-                        <img class="card-img-top" src="assets/images/img3.jpeg" alt="Card image cap">
-                    </a>
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up</p>
-                    </div>
-                    <div class="p-3">
-                        <a href="#" class="btn btn-block blogbotton">อ่านเพิ่มเติม</a>
-                    </div>
-                </div>
-            </section>
-            <section class="col-12 col-sm-6 col-md-4 p-2">
-                <div class="card h-100">
-                    <a href="#" class="warpper-card-img">
-                        <img class="card-img-top" src="assets/images/img4.jpeg" alt="Card image cap"></a>
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up </p>
-                    </div>
-                    <div class="p-3">
-                        <a href="#" class="btn btn-block blogbotton">อ่านเพิ่มเติม</a>
-                    </div>
-                </div>
-            </section>
-            <section class="col-12 col-sm-6 col-md-4 p-2">
-                <div class="card h-100">
-                    <a href="#" class="warpper-card-img">
-                        <img class="card-img-top" src="assets/images/img5.jpeg" alt="Card image cap"></a>
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up </p>
-                    </div>
-                    <div class="p-3">
-                        <a href="#" class="btn btn-block blogbotton">อ่านเพิ่มเติม</a>
-                    </div>
-                </div>
-            </section>
-            <section class="col-12 col-sm-6 col-md-4 p-2">
-                <div class="card h-100">
-                    <a href="#" class="warpper-card-img">
-                        <img class="card-img-top" src="assets/images/img6.jpeg" alt="Card image cap"></a>
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up</p>
-                    </div>
-                    <div class="p-3">
-                        <a href="#" class="btn btn-block blogbotton">อ่านเพิ่มเติม</a>
-                    </div>
-                </div>
-            </section>
-        </div>
-    </section>
-
-    <!-- Section About -->
-    <section class="position-relative py-5 jarallax" data-jarallax='{"speed": 0.1}' style="background-image: url(https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1652&q=80);">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 text-center">
-                    <img src="assets/images/logo_engineering.png" class="img-fluid" width="150px">
-                    <h2 class="text-white display-4 font-weight-bold">5G Thailand</h2>
-                    <div class="star-rating">
-                        <span>☆</span>
-                        <span>☆</span>
-                        <span>☆</span>
-                        <span>☆</span>
-                        <span>☆</span>
-                        <div class="star-current" style="width: 80%;">
-                            <span>★</span>
-                            <span>★</span>
-                            <span>★</span>
-                            <span>★</span>
-                            <span>★</span>
+            <?php while($row = $result->fetch_assoc()) { ?>
+                <section class="col-12 col-sm-6 col-md-4 p-2">
+                    <div class="card h-100">
+                        <a href="blog-detail.php?id=<?php echo $row['id'] ?>" class="warpper-card-img">
+                            <img class="card-img-top" src="<?php echo $row['image'] ?>" alt="Card image cap">
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title"><?php echo $row['subject'] ?></h5>
+                            <p class="card-text"><?php echo $row['sub_title'] ?></p>
+                        </div>
+                        <div class="p-3">
+                            <a href="blog-detail.php?id=<?php echo $row['id'] ?>" class="btn btn-block blogbotton">อ่านเพิ่มเติม</a>
                         </div>
                     </div>
-                </div>
-            </div>
+                </section>
+            <?php } ?>
         </div>
     </section>
 
     <!-- Section Footer -->
-    <footer class="semi-footer p-5 text-center text-md-left">
-        <div class="row ml-0 mr-0">
-            <div class="col-md-4">
-                <a class="navbar-brand" href="#">
-                    <img src="https://www.eng.chula.ac.th/wp-content/uploads/2018/01/logo.png" width="35" height="35"
-                        class="d-inline-block align-top" alt="">
-                    5G Thailand
-                </a>
-                <p>
-                    <i class="fa fa-phone"></i> 081-234-5678<br>
-                    <i class="fa fa-envelope"></i> example01@test.com<br>
-                    <i class="fa fa-address-card"></i> Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Dignissimos, ea.
-                </p>
-                <p>
-                    <a href="">
-                        <i class="fa fa-facebook-square fa-2x"></i>
-                    </a>
-                    <a href="">
-                        <i class="fa fa-youtube-square fa-2x"></i>
-                    </a>
-                </p>
-            </div>
-            <div class="col-md-3">
-                <h4>เมนู</h4>
-                <ul class="navbar-nav">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Blog</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="col-md-5">
-                <h4>บทความแนะนำ</h4>
-            </div>
-        </div>
-    </footer>
-    <footer class="footer">
-        <span>COPYRIGHT &copy; 2018</span>
-        <a href="">5G Thaniland</a>
-        All Right Reserved
-    </footer>
+    <?php include_once 'include/footer.php'?>
 
     <!-- Section On to Top -->
     <div class="to-top">

@@ -143,6 +143,9 @@ html, body{
 .semi-footer a{
     color:#dcdcdc;
 }
+.semi-footer li.active > a{
+    color:#FFFFFF;
+}
 .semi-footer h4{
     color: #D8D8D8;
     border-bottom: 1px solid;

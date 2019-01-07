@@ -82,7 +82,7 @@
         </div>
     </section>
     <!-- Section Blog -->
-    <section class="container">
+    <section class="container my-4">
         <h1 class="border-short-bottom">บทความ</h1>
         <div class="row">
             <section class="col-12 col-sm-6 col-md-4 p-2">
@@ -168,56 +168,7 @@
         </div>
     </section>
     <!-- Section Footer -->
-    <footer class="semi-footer p-5 text-center text-md-left">
-        <div class="row ml-0 mr-0">
-            <div class="col-md-4">
-                <a class="navbar-brand" href="#">
-                    <img src="https://www.eng.chula.ac.th/wp-content/uploads/2018/01/logo.png" width="35" height="35"
-                        class="d-inline-block align-top" alt="">
-                    5G Thailand
-                </a>
-                <p>
-                    <i class="fa fa-phone"></i> 081-234-5678<br>
-                    <i class="fa fa-envelope"></i> example01@test.com<br>
-                    <i class="fa fa-address-card"></i> Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Dignissimos, ea.
-                </p>
-                <p>
-                    <a href="">
-                        <i class="fa fa-facebook-square fa-2x"></i>
-                    </a>
-                    <a href="">
-                        <i class="fa fa-youtube-square fa-2x"></i>
-                    </a>
-                </p>
-            </div>
-            <div class="col-md-3">
-                <h4>เมนู</h4>
-                <ul class="navbar-nav">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Blog</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="col-md-5">
-                <h4>บทความแนะนำ</h4>
-            </div>
-        </div>
-    </footer>
-    <footer class="footer">
-        <span>COPYRIGHT &copy; 2018</span>
-        <a href="">5G Thaniland</a>
-        All Right Reserved
-    </footer>
+    <?php include_once('include/footer.php') ?>
 
     <!-- Section On to Top -->
     <div class="to-top">
@@ -227,6 +178,7 @@
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/jarallax/dist/jarallax.min.js"></script>
     <script src="assets/js/main.js"></script>
 </body>
 
