@@ -1,3 +1,15 @@
+<?php 
+    require_once 'php/connect.php';
+    $sql = "SELECT * FROM articles WHERE id = '".$_GET['id']."' ";
+    $result = $conn->query($sql) or die($conn->error);
+
+    if ($result->num_rows > 0){
+        $row = $result->fetch_assoc();
+    } else {
+        header('Location: blog.php');
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,7 +17,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>5G Thailand</title>
+    <title><?php echo $row['subject']; ?></title>
 
     <!-- Favicons -->
     <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicons/apple-touch-icon.png">
@@ -33,10 +45,10 @@
     <?php include_once('include/navbar.php') ?>
 
     <!-- Section PageTitle -->
-    <header class="jarallax" data-jarallax='{"speed": 0.3}' style="background-image: url(https://s26913.pcdn.co/wp-content/uploads/2018/07/AdobeStock_192398715-1024x440.jpeg);">
+    <header class="jarallax" data-jarallax='{"speed": 0.3}' style="background-image: url(<?php echo $row['image']; ?>)">
         <div class="page-image">
-            <h1 class="display-4 font-weight-bold">HTML คืออะไร</h1>
-            <p class="lead">"5G Thailand ความรู้ไร้ขีดจำกัด"</p>
+            <h1 class="display-4 font-weight-bold"><?php echo $row['subject']; ?></h1>
+            <p class="lead"><?php echo $row['sub_title']; ?></p>
         </div>
     </header>
 
@@ -44,22 +56,11 @@
     <section class="container blog-content">
         <div class="row">
             <div class="col-12">
-                <h1>hello</h1>
-
-                <ul>
-                    <li>a</li>
-                    <li>b</li>
-                </ul>
-
-                <ol>
-                    <li><em>qwdqwd</em></li>
-                    <li><em>www</em></li>
-                </ol>
-
+                <?php echo $row['detail']; ?>
             </div>
             <div class="col-12">
                 <hr>
-                <p class="text-right text-muted"> 3 มกราคม 2562</p>
+                <p class="text-right text-muted"><?php echo date_format(new DateTime($row['updated_at']),"j F Y"); ?></p>
             </div>
             <div class="col-12">
                 <div class="owl-carousel owl-theme">
@@ -136,7 +137,9 @@
                 </div>
             </div>
             <div class="col-12">
-                <div class="fb-comments" data-width="100%" data-href="https://developers.facebook.com/docs/plugins/comments#configurator"
+                <div class="fb-comments" 
+                    data-width="100%" 
+                    data-href="http://localhost/blog/blog-detail.php?id_5gthailand=<?php echo $row['id']; ?>"
                     data-numposts="5"></div>
                 <div id="fb-root"></div>
             </div>
@@ -155,7 +158,7 @@
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/jarallax/dist/jarallax.min.js"></script>
-    <script src="/node_modules/owl.carousel/dist/owl.carousel.min.js"></script>
+    <script src="node_modules/owl.carousel/dist/owl.carousel.min.js"></script>
     <script src="assets/js/main.js"></script>
     <script>
         $(document).ready(function () {
