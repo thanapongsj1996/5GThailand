@@ -8,6 +8,9 @@
     } else {
         header('Location: blog.php');
     }
+
+    $sql_random = "SELECT * FROM `articles` WHERE `status` = 'true' ORDER BY RAND() LIMIT 6";
+    $result_random = $conn->query($sql_random);
 ?>
 
 <!DOCTYPE html>
@@ -64,77 +67,23 @@
             </div>
             <div class="col-12">
                 <div class="owl-carousel owl-theme">
-                    <section class="col-12 p-2">
-                        <div class="card h-100">
-                            <a href="#" class="warpper-card-img">
-                                <img class="card-img-top" src="assets/images/img1.jpg" alt="Card image cap">
-                            </a>
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up </p>
+                    <?php  while($row_random = $result_random->fetch_assoc()){ ?>
+                        <section class="col-12 p-2">
+                            <div class="card h-100">
+                                <a href="blog-detail.php?id=<?php echo $row_random['id'] ?>" class="warpper-card-img">
+                                    <img class="card-img-top" src="<?php echo $base_path_blog.$row_random['image']?>" alt="Card image cap">
+                                </a>
+                                <div class="card-body">
+                                    <h5 class="card-title"><?php echo $row_random['subject']?></h5>
+                                    <p class="card-text"><?php echo $row_random['sub_title']?></p>
+                                </div>
+                                <div class="p-3">
+                                    <a href="blog-detail.php?id=<?php echo $row_random['id'] ?>" class="btn btn-block blogbotton">อ่านเพิ่มเติม</a>
+                                </div>
                             </div>
-                            <div class="p-3">
-                                <a href="#" class="btn btn-block blogbotton">อ่านเพิ่มเติม</a>
-                            </div>
-                        </div>
-                    </section>
-                    <section class="col-12 p-2">
-                        <div class="card h-100">
-                            <a href="#" class="warpper-card-img">
-                                <img class="card-img-top" src="assets/images/img1.jpg" alt="Card image cap">
-                            </a>
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up </p>
-                            </div>
-                            <div class="p-3">
-                                <a href="#" class="btn btn-block blogbotton">อ่านเพิ่มเติม</a>
-                            </div>
-                        </div>
-                    </section>
-                    <section class="col-12 p-2">
-                        <div class="card h-100">
-                            <a href="#" class="warpper-card-img">
-                                <img class="card-img-top" src="assets/images/img1.jpg" alt="Card image cap">
-                            </a>
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up </p>
-                            </div>
-                            <div class="p-3">
-                                <a href="#" class="btn btn-block blogbotton">อ่านเพิ่มเติม</a>
-                            </div>
-                        </div>
-                    </section>
-                    <section class="col-12 p-2">
-                        <div class="card h-100">
-                            <a href="#" class="warpper-card-img">
-                                <img class="card-img-top" src="assets/images/img1.jpg" alt="Card image cap">
-                            </a>
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up </p>
-                            </div>
-                            <div class="p-3">
-                                <a href="#" class="btn btn-block blogbotton">อ่านเพิ่มเติม</a>
-                            </div>
-                        </div>
-                    </section>
-                    <section class="col-12 p-2">
-                        <div class="card h-100">
-                            <a href="#" class="warpper-card-img">
-                                <img class="card-img-top" src="assets/images/img1.jpg" alt="Card image cap">
-                            </a>
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up </p>
-                            </div>
-                            <div class="p-3">
-                                <a href="#" class="btn btn-block blogbotton">อ่านเพิ่มเติม</a>
-                            </div>
-                        </div>
-                    </section>
-                </div>
+                        </section>
+                    <?php } ?>
+                </div> 
             </div>
             <div class="col-12">
                 <div class="fb-comments" 

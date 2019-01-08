@@ -107,7 +107,7 @@ html, body{
     color: #F9F9F9;
     background: rgba(14, 23, 91, 1)
 }
-.card.h-100{
+.card-contact{
     box-shadow: 1px 0px 7px #8888887d;
 }
 .btn-group-custom button{

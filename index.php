@@ -1,6 +1,6 @@
 <?php
 require_once 'php/connect.php';
-$sql = "SELECT * FROM `articles` WHERE `status` = 'true' LIMIT 6";
+$sql = "SELECT * FROM `articles` WHERE `status` = 'true' ORDER BY RAND() LIMIT 6";
 $result = $conn->query($sql);
 
 ?>

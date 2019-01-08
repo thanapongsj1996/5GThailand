@@ -47,7 +47,7 @@
                 <h2 class="border-short-bottom">รายละเอียด</h2>
             </div>
             <div class="col-sm-4 mb-3">
-                <div class="card h-100">
+                <div class="card h-100 card-contact">
                     <div class="card-body">
                         <i class="fa fa-address-card fa-4x py-2 text-info" aria-hidden="true"></i>
                         <h4 class="card-title">ที่อยู่</h4>
@@ -56,7 +56,7 @@
                 </div>
             </div>
             <div class="col-sm-4 mb-3">
-                <div class="card h-100">
+                <div class="card h-100 card-contact">
                     <div class="card-body">
                         <i class="fa fa-phone-square fa-4x py-2 text-info" aria-hidden="true"></i>
                         <h4 class="card-title">เบอร์โทรศัพท์</h4>
@@ -65,7 +65,7 @@
                 </div>
             </div>
             <div class="col-sm-4 mb-3">
-                <div class="card h-100">
+                <div class="card h-100 card-contact">
                     <div class="card-body">
                         <i class="fa fa-envelope fa-4x py-2 text-info" aria-hidden="true"></i>
                         <h4 class="card-title">อีเมล</h4>
@@ -76,7 +76,7 @@
         </div>
         <div class="row">
             <div class="col-12">
-                <div class="card">
+                <div class="card card-contact">
                     <div class="card-body">
                         <h5 class="card-title">แบบฟอร์มติดต่อเรา</h5>
                         <form>
