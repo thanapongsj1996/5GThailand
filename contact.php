@@ -79,29 +79,29 @@
                 <div class="card card-contact">
                     <div class="card-body">
                         <h5 class="card-title">แบบฟอร์มติดต่อเรา</h5>
-                        <form>
+                        <form method="post" action="php/contact.php">
                             <div class="form-row">
                                 <div class="form-group col-md-4">
                                     <label for="name">ชื่อ</label>
-                                    <input type="text" id="name" class="form-control" placeholder="ชื่อของคุณ">
+                                    <input type="text" id="name" name="name" class="form-control" required placeholder="ชื่อของคุณ">
                                 </div>
                                 <div class="form-group col-md-4">
                                     <label for="phone">เบอร์โทรศัพท์</label>
-                                    <input type="text" id="phone" class="form-control" placeholder="เบอร์โทรศัพท์ของคุณ">
+                                    <input type="text" id="phone" name="phone" class="form-control" required placeholder="เบอร์โทรศัพท์ของคุณ">
                                 </div>
                                 <div class="form-group col-md-4">
                                     <label for="email">อีเมล</label>
-                                    <input type="text" id="email" class="form-control" placeholder="example@email.com">
+                                    <input type="email" id="email" name="email" class="form-control" required placeholder="example@email.com">
                                 </div>
                             </div>
                             <div class="form-group">
                                 <label for="message">ข้อความของคุณ</label>
-                                <textarea id="message" rows="5" class="form-control" placeholder="เขียนข้อความของคุณที่นี่"></textarea>
+                                <textarea id="message" name="message"  rows="5" class="form-control" required placeholder="เขียนข้อความของคุณที่นี่"></textarea>
                             </div>
                             <div id="recaptcha-wrapper" class="text-center my-2">
-                                <div class="g-recaptcha d-inline-block" data-sitekey="6Lfe3IYUAAAAANa93j0rgB2vvNU7lFiz2cQx5VYv"></div>
+                                <div class="g-recaptcha d-inline-block" data-callback="recaptchaCallback" data-sitekey="6Lfe3IYUAAAAANa93j0rgB2vvNU7lFiz2cQx5VYv"></div>
                             </div>
-                            <button type="submit" class="btn btn-primary d-block mx-auto">ส่งข้อความ</button>
+                            <button type="submit" id="btn-submit" name="btn-submit" class="btn btn-primary d-block mx-auto" disabled>ส่งข้อความ</button>
                         </form>
                     </div>
                 </div>
@@ -156,6 +156,10 @@
                 captchaWrapper.height(captchaHeight * scale);
                 if (captchaResized == false) captchaResized = true;
             }
+        }
+        
+        function recaptchaCallback() {
+            $('#btn-submit').removeAttr('disabled')
         }
        
     </script>
