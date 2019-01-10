@@ -65,7 +65,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-12 text-center">
-                    <img src="assets/images/logo_engineering.png" class="img-fluid" width="150px">
+                    <img src="https://www.eng.chula.ac.th/wp-content/uploads/2018/01/logo.png" class="img-fluid" width="150px">
                     <h1 class="text-white display-4 font-weight-bold">Timeline About Us</h1>
                 </div>
             </div>

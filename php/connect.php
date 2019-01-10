@@ -3,7 +3,10 @@
     
     //error_reporting(0); //การปิด error ไว้ใช้ตอนเขียน error เอง
     //connect to database
-    $conn = new mysqli('localhost', 'root', '', 'blog');
+    //localhost
+    //$conn = new mysqli('localhost', 'root', '', 'blog');
+    //sever
+    $conn = new mysqli('localhost', 'localhost', '', 'blog');
     $conn->set_charset('utf8');
 
     if($conn->connect_errno) {

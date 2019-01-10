@@ -99,7 +99,7 @@
                                 <textarea id="message" name="message"  rows="5" class="form-control" required placeholder="เขียนข้อความของคุณที่นี่"></textarea>
                             </div>
                             <div id="recaptcha-wrapper" class="text-center my-2">
-                                <div class="g-recaptcha d-inline-block" data-callback="recaptchaCallback" data-sitekey="6Lfe3IYUAAAAANa93j0rgB2vvNU7lFiz2cQx5VYv"></div>
+                                <div class="g-recaptcha d-inline-block" data-callback="recaptchaCallback" data-sitekey=""></div>
                             </div>
                             <button type="submit" id="btn-submit" name="btn-submit" class="btn btn-primary d-block mx-auto" disabled>ส่งข้อความ</button>
                         </form>
