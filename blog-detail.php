@@ -63,6 +63,7 @@
             </div>
             <div class="col-12">
                 <hr>
+                <p class="text-right text-muted"><?php echo $row['writer'] ?></p>
                 <p class="text-right text-muted"><?php echo date_format(new DateTime($row['updated_at']),"j F Y"); ?></p>
             </div>
             <div class="col-12">

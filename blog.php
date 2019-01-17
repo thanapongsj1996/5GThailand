@@ -65,8 +65,8 @@ if(!$result){
                     <a href="blog.php?tag=5g">
                         <button class="btn btn-primary <?php echo $tag == '5g' ? 'active':'' ?>">5G</button>
                     </a>
-                    <a href="blog.php?tag=6g">
-                        <button class="btn btn-primary <?php echo $tag == '6g' ? 'active':'' ?>">6G</button>
+                    <a href="blog.php?tag=robot">
+                        <button class="btn btn-primary <?php echo $tag == 'robot' ? 'active':'' ?>">Robot</button>
                     </a>
                 </div>
             </div>

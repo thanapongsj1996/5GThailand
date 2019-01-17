@@ -1,7 +1,7 @@
 <?php 
     require_once('connect.php');
     if (isset($_POST['btn-submit'])){
-        $secretKey = '';
+        $secretKey = '6Lfe3IYUAAAAADZ3Bf3DwqNfUxbixstKcDpRcl4S';
         $response = $_POST['g-recaptcha-response'];
         $remoteip = $_SERVER['REMOTE_ADDR'];
 
@@ -39,7 +39,7 @@
     }
     function notify_message($message) {
         define('LINE_API', "https://notify-api.line.me/api/notify");
-        define('LINE_TOKEN', "");
+        define('LINE_TOKEN', "v4SytBrtv98fnFHfkQJKttk4fQDYUsTpze7qK1Vmul1");
         $queryData = http_build_query($message, '', '&');
         $headerOption = array(
             'http' => array(

@@ -1,4 +1,10 @@
-<?php $file_name = basename($_SERVER['SCRIPT_FILENAME'], ".php")?>
+<?php 
+    $file_name = basename($_SERVER['SCRIPT_FILENAME'], ".php");
+    require_once 'php/connect.php';
+    $newArticle = "SELECT * FROM `articles` WHERE 1 ORDER BY created_at DESC LIMIT 4";   
+    $result_newArticle = $conn->query($newArticle);
+ 
+?>
 <section class="position-relative py-5 jarallax" data-jarallax='{"speed": 0.3}' style="background-image: url(https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1652&q=80);">
     <div class="container">
         <div class="row">
@@ -25,7 +31,7 @@
 </section>
 <footer class="semi-footer p-5 text-center text-md-left">
         <div class="row ml-0 mr-0">
-            <div class="col-md-4">
+            <div class="col-md-5 text-center">
                 <a class="navbar-brand" href="#">
                     <img src="https://www.eng.chula.ac.th/wp-content/uploads/2018/01/logo.png" width="35" height="35"
                         class="d-inline-block align-top" alt="">
@@ -46,7 +52,7 @@
                     </a>
                 </p>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-3 text-center">
                 <h4>เมนู</h4>
                 <ul class="navbar-nav">
                     <li class="nav-item <?php echo $file_name == 'index' ? 'active' : '' ?>">
@@ -63,8 +69,11 @@
                     </li>
                 </ul>
             </div>
-            <div class="col-md-5">
-                <h4>บทความแนะนำ</h4>
+            <div class="col-md-4 text-center">
+                <h4>บทความใหม่</h4>
+                <?php while ($row = $result_newArticle->fetch_assoc()) { ?>
+                    <a class="nav-link" href="blog-detail.php?id=<?php echo $row['id'] ?>"><?php echo $row['subject'] ?></a>
+                <?php } ?>
             </div>
         </div>
     </footer>
