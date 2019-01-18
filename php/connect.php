@@ -14,4 +14,6 @@
         exit();
     }
     $base_path_blog = 'assets/images/blog/';
+    //ตั้งค่า Time Zone
+    date_default_timezone_set('Asia/Bangkok');
 ?>

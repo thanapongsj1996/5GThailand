@@ -15,6 +15,7 @@ $name = $link_array[count($link_array) - 2];
     <ul class="navbar-nav ml-auto">
       <li class="nav-item">
         <a class="nav-link" data-widget="control-sidebar" data-slide="true" href="#">
+          Last login: <?php echo date_format(new DateTime($_SESSION['last_login']), "j F Y H:i:s"); ?>
           <i class="fa fa-th-large"></i>
         </a>
       </li>
@@ -35,7 +36,7 @@ $name = $link_array[count($link_array) - 2];
           <img src="../../dist/img/avatar.png" class="img-circle elevation-2" alt="User Image">
         </div>
         <div class="info">
-          <a href="#" class="d-block">User Admin</a>
+          <a href="#" class="d-block"><?php echo $_SESSION['first_name'].' '.$_SESSION['last_name']; ?></a>
         </div>
       </div>
 

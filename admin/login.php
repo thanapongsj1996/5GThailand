@@ -1,8 +1,35 @@
 <?php 
   session_start();
+  require_once('../php/connect.php');
   if (isset($_POST['submit'])) {
-    $_SESSION['authen_id'] = 1; 
-    header('Location: pages/dashboard');
+    $username = $conn->real_escape_string($_POST['username']);
+    $password = $conn->real_escape_string($_POST['password']);
+
+    $sql = "SELECT * FROM `admin` WHERE `username` = '".$username."'";
+    $result = $conn->query($sql);
+    $row = $result->fetch_assoc();
+
+    if ( !empty($row) && password_verify($password, $row['password']) ) {
+      $_SESSION['authen_id'] = $row['id'];
+      $_SESSION['first_name'] = $row['first_name'];
+      $_SESSION['last_name'] = $row['last_name'];
+      $_SESSION['status'] = $row['status'];
+      $_SESSION['last_login'] = $row['last_login'];
+
+      $update = "UPDATE `admin` SET `last_login` = '".date("Y-m-d H:i:s")."' WHERE `id` = '".$row['id']."';";
+      $result_update = $conn->query($update);
+      if ($result_update) {
+        header('Location: pages/dashboard');
+      } else {
+        echo '<script> alert("Updating error!") </script>';
+      }
+      
+    } else {
+      echo '<script> alert("Username or password is not correct!") </script>';
+    }
+
+    
+
   }
 
 
@@ -51,13 +78,13 @@
             <div class="input-group-prepend">
                 <span class="input-group-text"><i class="fas fa-user"></i></span>
             </div>
-            <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+            <input type="text" name="username" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1" required>
         </div>
         <div class="input-group mb-3">
             <div class="input-group-prepend">
                 <span class="input-group-text"> <i class="fas fa-lock"></i></span>
             </div>
-            <input type="password" class="form-control" placeholder="Password" aria-label="Password" aria-describedby="basic-addon1">
+            <input type="password" name="password" class="form-control" placeholder="Password" aria-label="Password" aria-describedby="basic-addon1" required>
         </div>
 
         <div class="row">
