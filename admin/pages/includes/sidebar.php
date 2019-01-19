@@ -1,7 +1,8 @@
 <?php 
-$link = $_SERVER['REQUEST_URI'];
-$link_array = explode('/',$link);
-$name = $link_array[count($link_array) - 2];
+  $uri = $_SERVER['REQUEST_URI'];
+  $array = explode('/', $uri);
+  $key = array_search("pages", $array);
+  $name = $array[$key+1];
 ?>
 <nav class="main-header navbar navbar-expand border-bottom navbar-dark bg-info">
     <!-- Left navbar links -->
@@ -49,12 +50,14 @@ $name = $link_array[count($link_array) - 2];
               <p>Dashboard</p>
             </a>
           </li>
+          <?php if($_SESSION['status']=='super admin') { ?>
           <li class="nav-item">
             <a href="../admin" class="nav-link <?php echo $name == 'admin' ? 'active': '' ?>">
               <i class="fas fa-users-cog nav-icon"></i>
               <p>Admin Management</p>
             </a>
           </li>
+          <?php } ?>
           <li class="nav-item">
             <a href="../articles" class="nav-link <?php echo $name == 'articles' ? 'active': '' ?>">
               <i class="fas fa-chalkboard-teacher nav-icon"></i>
