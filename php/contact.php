@@ -1,3 +1,6 @@
+<meta charset="UTF-8">
+<meta name="viewport" content="width=320, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+
 <?php 
     require_once('connect.php');
     if (isset($_POST['btn-submit'])){

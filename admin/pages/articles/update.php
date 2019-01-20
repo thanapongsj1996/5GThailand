@@ -12,7 +12,7 @@
                 $image_delete = ROOT_PATH . $base_path_blog . pathinfo($_POST['data_file'], PATHINFO_BASENAME);
                 unlink($image_delete);
             }else{
-                echo '<script> alert("ไม่สามารถอัพโหลดรูปภาพใหม่ได้ โปรดลองอีกครั้ง")</script>'; 
+                echo '<script> alert("Could not upload image, please try again!")</script>'; 
                 header('Refresh:0; url=index.php'); 
             }
         }
@@ -31,7 +31,7 @@
                     WHERE id = '".$_POST['id']."'; ";
         $result = $conn->query($sql) or die($conn->error);
         if($result){
-            echo '<script> alert("แก้ไขข้อมูลสำเร็จ") </script>';
+            echo '<script> alert("Editing successfully!") </script>';
             header('Refresh:0; url=index.php');
         }
 

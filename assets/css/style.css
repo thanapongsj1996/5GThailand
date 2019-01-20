@@ -112,7 +112,7 @@ html, body{
 }
 .btn-group-custom button{
     margin-bottom: 0.5rem;
-    width: 100px;
+    width: 120px;
 }
 .btn-group-custom a:hover{
     text-decoration: none;

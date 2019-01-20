@@ -120,11 +120,12 @@
             <div class="form-group">
               <label>Select a Tags</label>
               <select class="form-control select2" name="tags[]" multiple="multiple" data-placeholder="Select a Tags" style="width: 100%;">
-                <option value="html">html</option>
-                <option value="css">css</option>
-                <option value="javascript">javascript</option>
-                <option value="php">php</option>
-                <option value="mysql">mysql</option>
+                <option value="news">NEWS</option>
+                <option value="future">FUTURE</option>
+                <option value="society">SOCIETY</option>
+                <option value="iot">IOT</option>
+                <option value="innovation">INNOVATION</option>
+                <option value="others">OTHERS</option>
               </select>
             </div>
             <input type="checkbox" name="status" checked data-toggle="toggle" data-on="Active" data-off="Block" data-style="ios">

@@ -21,15 +21,12 @@
       if ($result_update) {
         header('Location: pages/dashboard');
       } else {
-        echo '<script> alert("Updating error!") </script>';
+        echo '<script> alert("Login error!") </script>';
       }
       
     } else {
       echo '<script> alert("Username or password is not correct!") </script>';
     }
-
-    
-
   }
 
 

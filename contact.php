@@ -60,7 +60,7 @@
                     <div class="card-body">
                         <i class="fa fa-phone-square fa-4x py-2 text-info" aria-hidden="true"></i>
                         <h4 class="card-title">เบอร์โทรศัพท์</h4>
-                        <p class="card-text">(+66)81-111-1111</p>
+                        <p class="card-text">(+66)85-690-0809</p>
                     </div>
                 </div>
             </div>
@@ -69,7 +69,7 @@
                     <div class="card-body">
                         <i class="fa fa-envelope fa-4x py-2 text-info" aria-hidden="true"></i>
                         <h4 class="card-title">อีเมล</h4>
-                        <p class="card-text">testemailadmin@gmail.com</p>
+                        <p class="card-text">thanapong_somjai@hotmail.com</p>
                     </div>
                 </div>
             </div>

@@ -38,18 +38,9 @@
                     5G Thailand
                 </a>
                 <p>
-                    <i class="fa fa-phone"></i> 081-234-5678<br>
-                    <i class="fa fa-envelope"></i> example01@test.com<br>
-                    <i class="fa fa-address-card"></i> Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Dignissimos, ea.
-                </p>
-                <p>
-                    <a href="">
-                        <i class="fa fa-facebook-square fa-2x"></i>
-                    </a>
-                    <a href="">
-                        <i class="fa fa-youtube-square fa-2x"></i>
-                    </a>
+                    <i class="fa fa-phone"></i> (+66)85-690-0809<br>
+                    <i class="fa fa-envelope"></i>thanapong_somjai@hotmail.com<br>
+                    <i class="fa fa-address-card"></i> Faculty of Enginerring, Chulalongkorn University
                 </p>
             </div>
             <div class="col-md-3 text-center">

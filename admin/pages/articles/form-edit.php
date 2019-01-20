@@ -130,11 +130,12 @@
             <div class="form-group">
               <label>Select a Tags</label>
               <select class="form-control select2" name="tags[]" multiple="multiple" data-placeholder="Select a Tags" style="width: 100%;">
-                <option value="html" <?php echo in_array('html', $arr_tag) ? 'selected': ''; ?>>html</option>
-                <option value="css" <?php echo in_array('css', $arr_tag) ? 'selected': ''; ?>>css</option>
-                <option value="javascript" <?php echo in_array('javascript', $arr_tag) ? 'selected': ''; ?>>javascript</option>
-                <option value="php" <?php echo in_array('php', $arr_tag) ? 'selected': ''; ?>>php</option>
-                <option value="mysql" <?php echo in_array('mysql', $arr_tag) ? 'selected': ''; ?>>mysql</option>
+                <option value="news" <?php echo in_array('news', $arr_tag) ? 'selected': ''; ?>>NEWS</option>
+                <option value="future" <?php echo in_array('future', $arr_tag) ? 'selected': ''; ?>>FUTURE</option>
+                <option value="society" <?php echo in_array('society', $arr_tag) ? 'selected': ''; ?>>SOCIETY</option>
+                <option value="iot" <?php echo in_array('iot', $arr_tag) ? 'selected': ''; ?>>IOT</option>
+                <option value="innovation" <?php echo in_array('innovation', $arr_tag) ? 'selected': ''; ?>>INNOVATION</option>
+                <option value="others" <?php echo in_array('others', $arr_tag) ? 'selected': ''; ?>>OTHERS</option>
               </select>
             </div>
             <input type="checkbox" name="status" <?php echo $row['status'] == 'true' ? 'checked': ''; ?> data-toggle="toggle" data-on="Active" data-off="Block" data-onstyle="success" data-style="ios">

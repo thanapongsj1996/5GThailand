@@ -54,19 +54,25 @@ if(!$result){
             <div class="col-12 text-center">
                 <div class="btn-group-custom">
                     <a href="blog.php?tag=all">
-                        <button class="btn btn-primary <?php echo $tag == 'all' ? 'active':'' ?>">ทั้งหมด</button>
+                        <button class="btn btn-primary <?php echo $tag == 'all' ? 'active':'' ?>">ALL</button>
                     </a>
-                    <a href="blog.php?tag=html">
-                        <button class="btn btn-primary <?php echo $tag == 'html' ? 'active':'' ?>">HTML</button>
+                    <a href="blog.php?tag=news">
+                        <button class="btn btn-primary <?php echo $tag == 'news' ? 'active':'' ?>">NEWS</button>
                     </a>
-                    <a href="blog.php?tag=css">
-                        <button class="btn btn-primary <?php echo $tag == 'css' ? 'active':'' ?>">CSS</button>
+                    <a href="blog.php?tag=future">
+                        <button class="btn btn-primary <?php echo $tag == 'future' ? 'active':'' ?>">FUTURE</button>
                     </a>
-                    <a href="blog.php?tag=5g">
-                        <button class="btn btn-primary <?php echo $tag == '5g' ? 'active':'' ?>">5G</button>
+                    <a href="blog.php?tag=society">
+                        <button class="btn btn-primary <?php echo $tag == 'society' ? 'active':'' ?>">SOCIETY</button>
                     </a>
-                    <a href="blog.php?tag=robot">
-                        <button class="btn btn-primary <?php echo $tag == 'robot' ? 'active':'' ?>">Robot</button>
+                    <a href="blog.php?tag=iot">
+                        <button class="btn btn-primary <?php echo $tag == 'iot' ? 'active':'' ?>">IOT</button>
+                    </a>
+                    <a href="blog.php?tag=innovation">
+                        <button class="btn btn-primary <?php echo $tag == 'innovation' ? 'active':'' ?>">INNOVATION</button>
+                    </a>
+                    <a href="blog.php?tag=others">
+                        <button class="btn btn-primary <?php echo $tag == 'others' ? 'active':'' ?>">OTHERS</button>
                     </a>
                 </div>
             </div>
