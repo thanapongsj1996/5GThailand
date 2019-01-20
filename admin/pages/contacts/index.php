@@ -1,4 +1,12 @@
-<?php include_once('../authen.php') ?>
+<?php
+  include_once('../authen.php'); 
+  $sql = "SELECT * FROM contacts ORDER BY id DESC";
+  $result = $conn->query($sql);
+
+
+  $replace = "UPDATE contacts SET STATUS = REPLACE(STATUS, 'false', 'true')";
+  $conn->query($replace);
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -8,15 +16,15 @@
   <!-- Tell the browser to be responsive to screen width -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- Favicons -->
-  <link rel="apple-touch-icon" sizes="180x180" href="../../dist/img/favicons/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="../../dist/img/favicons/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="../../dist/img/favicons/favicon-16x16.png">
-  <link rel="manifest" href="../../dist/img/favicons/site.webmanifest">
-  <link rel="mask-icon" href="../../dist/img/favicons/safari-pinned-tab.svg" color="#5bbad5">
-  <link rel="shortcut icon" href="../../dist/img/favicons/favicon.ico">
-  <meta name="msapplication-TileColor" content="#da532c">
-  <meta name="msapplication-config" content="../../dist/img/favicons/browserconfig.xml">
-  <meta name="theme-color" content="#ffffff">
+  <link rel="apple-touch-icon" sizes="180x180" href="../../../assets/images/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../../assets/images/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../../assets/images/favicons/favicon-16x16.png">
+    <link rel="manifest" href="../../../assets/images/favicons/site.webmanifest">
+    <link rel="mask-icon" href="../../../assets/images/favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="../../../assets/images/favicons/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="../../../assets/images/favicons/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
   <!-- Ionicons -->
@@ -75,14 +83,18 @@
                 </tr>
                 </thead>
                 <tbody>
-                <?php for ($i=1; $i < 50 ; $i++) { ?>
+                <?php 
+                  $num = 0;
+                  while($row = $result->fetch_assoc()){
+                    $num++;
+                ?>
                 <tr>
-                    <td><?php echo $i; ?></td>
-                    <td>Lorem, ipsum.</td>
-                    <td>088-888-8888</td>
-                    <td>Test@test</td>
-                    <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione ad maxime quas esse ipsa exercitationem praesentium hic numquam dignissimos quia?</td>
-                    <td>1/12/2018</td>
+                    <td><?php echo $num; ?></td>
+                    <td><?php echo $row['name']; ?></td>
+                    <td><?php echo $row['phone']; ?></td>
+                    <td><?php echo $row['email']; ?></td>
+                    <td><?php echo $row['detail']; ?></td>
+                    <td><?php echo $row['created_at']; ?></td>
                 </tr>
                 <?php } ?>
                 </tbody>

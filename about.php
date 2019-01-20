@@ -31,9 +31,9 @@
     <?php include_once('include/navbar.php') ?>
 
     <!-- Section PageTitle -->
-    <header class="jarallax" data-jarallax='{"speed": 0.3}' style="background-image: url(https://images.unsplash.com/photo-1512699126689-b59fb4e97c92?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80);">
+    <header class="jarallax" data-jarallax='{"speed": 0.3}' style="background-image: url(https://images.unsplash.com/photo-1537998737999-67ee87804c66?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80&fbclid=IwAR28T_PCfZFhKAfzQk49lw4Vrn8MXrgFY7IbiRKCvGZlrstxuZui5Y-VJqI);">
         <div class="page-image">
-            <h1 class="display-4 font-weight-bold">เกี่ยวกับเรา</h1>
+            <h1 class="display-4 font-weight-bold">ทำความรู้จัก 5G</h1>
             <p class="lead">"5G Thailand อนาคตความเร็วสูง"</p>
         </div>
     </header>
@@ -48,25 +48,19 @@
                 </div>
             </div>
             <div class="col-lg-6">
-                <h2>ทำความรู้จักกับเราให้ดียิ่งขึ้น...</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro nisi, animi velit ipsa quia ratione
-                    perferendis aspernatur repellat hic est asperiores at facilis inventore eveniet molestiae itaque
-                    harum reprehenderit quae!</p>
-                <h2>ทำความรู้จักกับเราให้ดียิ่งขึ้น...</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro nisi, animi velit ipsa quia ratione
-                    perferendis aspernatur repellat hic est asperiores at facilis inventore eveniet molestiae itaque
-                    harum reprehenderit quae!</p>
+                <h2>5G คืออะไร</h2>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;หากคุณคิดว่าอินเตอร์เน็ต 4G ในปัจจุบัน ยังช้าไม่สามารถตอบสนองต่อความต้องการที่รวดเร็วของคนในยุค 4.0 ได้อย่างเต็มที่ 5G คือคำตอบ แล้ว 5G คืออะไรหละ </p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5G ก็คือ เทคโนโลยีใหม่ที่จะเข้ามาแทน 4G ในอนาคต ซึ่ง 5G ไม่ได้พัฒนามาเพื่อการสื่อสารเฉพาะมนุษย์เพียงอย่างเดียวเท่านั้น แต่ยังพัฒนาเพื่อรองรับความต้องการในการติดต่อสื่อสารกับสิ่งต่างๆ เช่น ตู้เย็น เครื่องซักผ้า รถยนต์ รวมไปถึงอุปกรณ์ต่างๆในหน่วยงานขนาดใหญ่ทั้งภาคอุตสาหกรรม การขนส่ง เศรษฐกิจ และการเงิน เป็นต้น  ตัวอย่างที่เราเห็นอยู่ในปัจจุบันก็คือ เทคโนโลยี IOT คือเราสามารถสั่งการอุปกรณ์ต่างๆผ่านเครือข่ายอินเตอร์เน็ตได้ นอกจากนี้แล้วยังคาดการณ์เอาไว้ว่า ความเร็วในการรับส่งข้อมูลของเทคโนโลยี 5G จะมากกว่าเทคโนโลยี 4G ถึง 20 เท่า ดังนั้นเราจะยกตัวอย่างง่ายๆคือ คุณสามารถดาวน์โหลดเกมที่ขนาด 20 GB ได้ภายใน 2 นาทีหรือดาวน์โหลดหนัง ความชัดระดับ HD ได้ภายในเวลาไม่กี่วินาทีเท่านั้น คงรวดเร็วสมใจคนยุค 4.0 อย่างเราได้อย่างแน่นอน </p>
             </div>
         </div>
     </section>
 
     <!-- Section Timeline -->
-    <section class="position-relative py-5 jarallax" data-jarallax='{"speed": 0.3}' style="background-image: url(https://images.unsplash.com/photo-1476725994324-6f6833ea0631?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80);">
-        <div class="container">
+    <section class="position-relative py-5 jarallax" data-jarallax='{"speed": 0.3}' style="background-image: url(https://images.unsplash.com/photo-1496065187959-7f07b8353c55?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80);">
+        <div class="container" style="padding: 80px">
             <div class="row">
                 <div class="col-12 text-center">
-                    <img src="https://www.eng.chula.ac.th/wp-content/uploads/2018/01/logo.png" class="img-fluid" width="150px">
-                    <h1 class="text-white display-4 font-weight-bold">Timeline About Us</h1>
+                    <h1 class="text-white display-4 font-weight-bold">The Evolution of 5G</h1>
                 </div>
             </div>
         </div>
@@ -77,11 +71,16 @@
                 <ul class="timeline">
                     <li>
                         <div class="timeline-badge">
-                            <p>1981</p>
+                            <p>1980</p>
                         </div>
                         <div class="timeline-card">
                             <h5>1G</h5>
-                            <p class="text-muted">Analog Technology</p>
+                            <p class="text-muted">- การสื่อสารแบบคลื่นวิทยุ (Analog)</p>
+                            <p class="text-muted">- ความเร็วในการรับส่งข้อมูลสูงสุด 2.4 Kbps.</p>
+                            <p class="text-muted">- สามารถสื่อสารกันได้ภายในวงจำกดเท่านั้น</p>
+                            <p class="text-muted">- สามารถโทรออก – รับสาย ได้อย่างเดียว</p>
+                            <p class="text-muted">- โทรศัพท์มีขนาดใหญ่และหนักมาก</p>
+                            <p class="text-muted">- คุณภาพเสียงและความปลอดภัยต่ำ</p>
                         </div>
                     </li>
                     <li class="inverted">
@@ -90,7 +89,34 @@
                         </div>
                         <div class="timeline-card">
                             <h5>2G</h5>
-                            <p class="text-muted">Digital Technology</p>
+                            <p class="text-muted">- การสื่อสารแบบ Digital</p>
+                            <p class="text-muted">- ความเร็วในการรับส่งข้อมูลสูงสุด 6.4 Kbps.</p>
+                            <p class="text-muted">- เทคโนโลยี GSM (Global System for Mobilization) </p>
+                            <p class="text-muted">- โทรศัพท์สามารถติดต่อสื่อสารได้ทั่วโลกเรียกว่า Roaming</p>
+                            <p class="text-muted">- สามารถรับส่งข้อความ SMS ได้</p>
+                            <p class="text-muted">- เริ่มมีการดาวน์โหลด Ringtone (monotone), Wallpaper ขาว-ดำ หรือภาพที่มีคุณภาพต่ำ</p>
+                        </div>
+                    </li>
+                    <li class="inverted">
+                        <div class="timeline-badge">  
+                        </div>
+                        <div class="timeline-card">
+                            <h5>2.5G</h5>
+                            <p class="text-muted">- เทคโนโลยี GPRS (General Pocket Radio Service)</p>
+                            <p class="text-muted">- ความเร็วในการรับส่งข้อมูลสูงสุด 6.4 - 144 Kbps.</p>
+                            <p class="text-muted">- สามารถรับส่งข้อความได้ทั้ง SMS และ MMS</p>
+                            <p class="text-muted">- มีบริการอินเตอร์เน็ตความเร็วต่ำ</p>
+                            <p class="text-muted">- สามารถรับส่ง e-mail ได้</p>
+                        </div>
+                    </li>
+                    <li class="inverted">
+                        <div class="timeline-badge">  
+                        </div>
+                        <div class="timeline-card">
+                            <h5>2.75G</h5>
+                            <p class="text-muted">- เทคโนโลยี EDGE (Enhance Data rate for Global Evolution)</p>
+                            <p class="text-muted">- ความเร็วในการรับส่งข้อมูลสูงสุด 70 - 180 Kbps.</p>
+                            <p class="text-muted">- รองรับ Ringtone แบบ MP3</p>
                         </div>
                     </li>
                     <li>
@@ -99,16 +125,25 @@
                         </div>
                         <div class="timeline-card">
                             <h5>3G</h5>
-                            <p class="text-muted">Internet in your phone</p>
+                            <p class="text-muted">- ความเร็วในการรับส่งข้อมูลสูงสุด 2  Mbps.</p>
+                            <p class="text-muted">- Always On คือโทรศัพท์มีการเชื่อมต่อ 3G ตลอดเวลา</p>
+                            <p class="text-muted">- โทรศัพท์มือถือถูกเรียกว่า Smart phone ครั้งแรก</p>
+                            <p class="text-muted">- สามารถรับส่งข้อมูลขนาดใหญ่ได้</p>
+                            <p class="text-muted">- อินเตอร์เน็ตความเร็วสูง </p>
+                            <p class="text-muted">- Video Conferencing, TV Steaming, Game Online</p>
                         </div>
                     </li>
                     <li class="inverted">
                         <div class="timeline-badge">
-                            <p>2001</p>
+                            <p>2009</p>
                         </div>
                         <div class="timeline-card">
                             <h5>4G</h5>
-                            <p class="text-muted">Mobile broadband</p>
+                            <p class="text-muted">- ความเร็วในการรับส่งข้อมูล 100Mbps. – 1Gbps. </p>
+                            <p class="text-muted">- เทคโนโลยี LTE (Long Term Evolution)</p>
+                            <p class="text-muted">- อินเตอร์เน็ตความเร็วสูง สามารถดูหนัง ฟังเพลง ได้ไม่สะดุด /p>
+                            <p class="text-muted">- คุณภาพข้อมูลและความปลอดภัยสูง</p>
+                            <p class="text-muted">- สินค้าแบบ iOT สูงขึ้นมาก</p>
                         </div>
                     </li>
                     <li>
@@ -117,7 +152,9 @@
                         </div>
                         <div class="timeline-card">
                             <h5>5G</h5>
-                            <p class="text-muted">Faster 1,000 times. More data</p>
+                            <p class="text-muted">- ความเร็วในการรับส่งข้อมูลมากกว่า  1Gbps. อาจมากกว่า 4G ถึง 20 เท่า</p>
+                            <p class="text-muted">- สามารถดาวน์โหลดวีดิโอแบบ HD ขนาด 8 GB ได้ในเวลา 1 วินาที</p>
+                            <p class="text-muted">- รองรับ WWWW. (World Wide Wireless Web) ที่จะเกิดขึ้นได้ในอนาคต</p>
                         </div>
                     </li>
                     <li class="timeline-arrow">

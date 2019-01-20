@@ -44,7 +44,7 @@ $result = $conn->query($sql);
         </ol>
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <div class="carousel-img" style="background-image: url('https://images.unsplash.com/photo-1483653364400-eedcfb9f1f88?ixlib=rb-0.3.5&s=14e2b9ff23b60d0f4600405822344ffc&auto=format&fit=crop&w=3150&q=80')">
+                <div class="carousel-img" style="background-image: url('https://images.unsplash.com/photo-1523731407965-2430cd12f5e4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80')">
                     <div class="carousel-caption">
                         <h1 class="display-4 font-weight-bold">5G Thailand</h1>
                         <p class="lead">เทคโนโลยี 5G อนาคตความเร็วสูง</p>
@@ -53,7 +53,7 @@ $result = $conn->query($sql);
                 </div>
             </div>
             <div class="carousel-item">
-                <div class="carousel-img" style="background-image: url('https://images.unsplash.com/photo-1455459182396-ae46100617cb?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=5c33d978e689cb3694d63c490186edd6&auto=format&fit=crop&w=2560&q=80')">
+                <div class="carousel-img" style="background-image: url('https://images.pexels.com/photos/1553879/pexels-photo-1553879.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940')">
                     <div class="carousel-caption">
                         <h1 class="display-4 font-weight-bold">5G Thailand</h1>
                         <p class="lead">เทคโนโลยี 5G อนาคตความเร็วสูง</p>
@@ -62,7 +62,7 @@ $result = $conn->query($sql);
                 </div>
             </div>
             <div class="carousel-item">
-                <div class="carousel-img" style="background-image: url('https://images.unsplash.com/photo-1523526271543-b25650ebfafd?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=dd7539088f40cbd1f98b1cf92f9582cc&auto=format&fit=crop&w=1920&q=80')">
+                <div class="carousel-img" style="background-image: url('https://images.unsplash.com/photo-1507358522600-9f71e620c44e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80')">
                     <div class="carousel-caption">
                         <h1 class="display-4 font-weight-bold">5G Thailand</h1>
                         <p class="lead">เทคโนโลยี 5G อนาคตความเร็วสูง</p>

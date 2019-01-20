@@ -12,4 +12,9 @@
    } else if ( $name == 'admin' && $_SESSION['status'] == 'admin' ) {
       header('Location: ../dashboard/');
    }
+
+   define("BASE_URL", DIRECTORY_SEPARATOR . "blog" . DIRECTORY_SEPARATOR); // LOCAL
+    //define("BASE_URL", '/'); // Empty
+    //define("BASE_URL", DIRECTORY_SEPARATOR . "sclass1" . DIRECTORY_SEPARATOR); // HOST
+    define("ROOT_PATH", $_SERVER['DOCUMENT_ROOT'] . BASE_URL);
 ?>

@@ -1,4 +1,12 @@
-<?php include_once('../authen.php') ?>
+<?php 
+
+  include_once('../authen.php');
+  $sql = "SELECT * from `articles`";
+  $result = $conn->query($sql);
+
+
+
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -8,25 +16,29 @@
   <!-- Tell the browser to be responsive to screen width -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- Favicons -->
-  <link rel="apple-touch-icon" sizes="180x180" href="../../dist/img/favicons/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="../../dist/img/favicons/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="../../dist/img/favicons/favicon-16x16.png">
-  <link rel="manifest" href="../../dist/img/favicons/site.webmanifest">
-  <link rel="mask-icon" href="../../dist/img/favicons/safari-pinned-tab.svg" color="#5bbad5">
-  <link rel="shortcut icon" href="../../dist/img/favicons/favicon.ico">
-  <meta name="msapplication-TileColor" content="#da532c">
-  <meta name="msapplication-config" content="../../dist/img/favicons/browserconfig.xml">
-  <meta name="theme-color" content="#ffffff">
+  <link rel="apple-touch-icon" sizes="180x180" href="../../../assets/images/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../../assets/images/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../../assets/images/favicons/favicon-16x16.png">
+    <link rel="manifest" href="../../../assets/images/favicons/site.webmanifest">
+    <link rel="mask-icon" href="../../../assets/images/favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="../../../assets/images/favicons/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="../../../assets/images/favicons/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
   <!-- Ionicons -->
   <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
   <!-- Theme style -->
   <link rel="stylesheet" href="../../dist/css/adminlte.min.css">
+  <!-- Style -->
+  <link rel="stylesheet" href="../../dist/css/style.css">
   <!-- Google Font: Source Sans Pro -->
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
   <!-- DataTables -->
   <link rel="stylesheet" href="../../plugins/datatables/dataTables.bootstrap4.min.css">
+  <!-- Bootstrap-toggle -->
+  <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
 </head>
 <body class="hold-transition sidebar-mini">
 <!-- Site wrapper -->
@@ -71,27 +83,33 @@
               <th>Image</th>
               <th>Subject</th>
               <th>Subtitle</th>
-              <th>Created</th>
-              <th>Edit</th>
-              <th>Delete</th>
+              <th>Writer</th>
+              <th>Status</th>
+              <th>Updated</th>
+              <th>Action</th>
             </tr>
             </thead>
             <tbody>
-            <?php for($id=1; $id <= 5; $id++) { ?>
+            <?php 
+              $num = 0;
+              while($row = $result->fetch_assoc()) { 
+                //print_r($row);
+                $num++;
+            ?>
               <tr>
-                <td><?php echo $id; ?></td>
-                <td><img class="img-fluid d-block mx-auto" src="https://images.unsplash.com/photo-1531026383433-6ed5a112afbc?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=c010c700aac502636ad0b579ce1274a4&auto=format&fit=crop&w=1350&q=80" width="150px" alt=""></td>
-                <td>Subject<?php echo $id; ?></td>
-                <td>Subtitle<?php echo $id; ?></td>
-                <td>1/12/2018</td>
+                <td><?php echo $num; ?></td>
+                <td><img class="img-fluid d-block mx-auto" src="<?php echo '../../../assets/images/blog/'.$row['image'] ?>" width="150px" alt=""></td>
+                <td><?php echo $row['subject']; ?></td>
+                <td><?php echo $row['sub_title']; ?></td>
+                <td><?php echo $row['writer']; ?></td>
+                <td><input type="checkbox" class="toggle-event" data-id="<?php echo $row['id']; ?>" name="status" type="checkbox" <?php echo $row['status'] == 'true' ? 'checked': ''; ?>  data-toggle="toggle" data-on="Active" data-off="Block" data-style="ios"></td>
+                <td><?php echo date_format(new DateTime($row['updated_at']),"j F Y | H:i") ; ?></td>
                 <td>
-                  <a href="form-edit.php?id=<?php echo $id; ?>" class="btn btn-sm btn-warning text-white">
-                    <i class="fas fa-edit"></i> edit
+                  <a href="form-edit.php?id=<?php echo $row['id']; ?>" class="btn btn-sm btn-warning text-white">
+                    <i class="fas fa-edit"></i>
                   </a> 
-                </td>
-                <td>
-                  <a href="#" onclick="deleteItem(<?php echo $id; ?>);" class="btn btn-sm btn-danger">
-                    <i class="fas fa-trash-alt"></i> Delete
+                  <a href="#" onclick="deleteItem(<?php echo $row['id']; ?>);" class="btn btn-sm btn-danger">
+                    <i class="fas fa-trash-alt"></i>
                   </a>
                 </td>
               </tr>
@@ -129,6 +147,8 @@
 <!-- DataTables -->
 <script src="https://adminlte.io/themes/AdminLTE/bower_components/datatables.net/js/jquery.dataTables.min.js"></script>
 <script src="../../plugins/datatables/dataTables.bootstrap4.min.js"></script>
+<!-- Bootstrap-toggle -->
+<script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
 
 <script>
   $(function () {
@@ -148,6 +168,32 @@
       // window.location='delete.php?id='+id;
     }
   };
+
+  function deleteItem (id) { 
+    if( confirm('Are you sure, you want to delete this item?') == true){
+      window.location=`delete.php?id=${id}`;
+      // window.location='delete.php?id='+id;
+    }
+  };
+
+  $('.toggle-event').change(function(){
+    $.ajax({
+      method: "POST",
+      url: "active.php",
+      data: { 
+        id: $(this).data('id'), 
+        value: $(this).is(':checked') 
+      }
+    })
+    .done(function( resp, status, xhr) {
+      setTimeout(() => {
+        alert(status)
+      }, 300);
+    })
+    .fail(function ( xhr, status, error) { 
+      alert(status +' '+ error)
+    })
+  })
 
 </script>
 
