@@ -19,7 +19,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `thanapon_blog`
+-- Database: `thanapon_5g`
 --
 
 -- --------------------------------------------------------
@@ -45,8 +45,7 @@ CREATE TABLE `admin` (
 --
 
 INSERT INTO `admin` (`id`, `first_name`, `last_name`, `username`, `password`, `status`, `last_login`, `updated_at`, `created_at`) VALUES
-(1, 'Thanapong', 'Somjai', 'iamboy1150', '$2y$10$61XG2r2BtWtDpbJOg/NczOEVJDMd.hQmTrGbvVaYXUK6OofHN.NMm', 'super admin', '2019-01-21 02:01:27', '2019-01-18 13:02:16', '2019-01-18 13:02:16'),
-(2, 'แพรว', 'พินิจผล', 'praew0018', '$2y$10$IK17xIVkLMLZ0VMCg6Z7cuog6afAVBcm21F0IZgHlKIBGCMH6zVbK', 'admin', '2019-01-21 02:12:43', '2019-01-21 02:12:28', '2019-01-21 02:12:28');
+(1, 'Thanapong', 'Somjai', 'iamboy1150', '$2y$10$61XG2r2BtWtDpbJOg/NczOEVJDMd.hQmTrGbvVaYXUK6OofHN.NMm', 'super admin', '2019-01-21 02:01:27', '2019-01-18 13:02:16', '2019-01-18 13:02:16');
 
 -- --------------------------------------------------------
 

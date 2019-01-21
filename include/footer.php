@@ -17,7 +17,7 @@
                     <span>☆</span>
                     <span>☆</span>
                     <span>☆</span>
-                    <div class="star-current" style="width: 80%;">
+                    <div class="star-current" style="width: 100%;">
                         <span>★</span>
                         <span>★</span>
                         <span>★</span>
@@ -39,7 +39,7 @@
                 </a>
                 <p>
                     <i class="fa fa-phone"></i> (+66)85-690-0809<br>
-                    <i class="fa fa-envelope"></i>thanapong_somjai@hotmail.com<br>
+                    <i class="fa fa-envelope"></i> thanapong_somjai@hotmail.com<br>
                     <i class="fa fa-address-card"></i> Faculty of Enginerring, Chulalongkorn University
                 </p>
             </div>
@@ -69,7 +69,7 @@
         </div>
     </footer>
     <footer class="footer">
-        <span>COPYRIGHT &copy; 2018</span>
-        <a href="">5G Thaniland</a>
-        All Right Reserved
+
+        <span>COPYRIGHT &copy; 2019</span>
+        <a href="">5G Thaniland</a><span>All Rights Reserved. Website by Thanapong Somjai
     </footer>
