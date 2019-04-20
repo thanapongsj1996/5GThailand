@@ -6,7 +6,7 @@
     //localhost
     //$conn = new mysqli('localhost', 'root', '', 'blog');
     //sever
-    $conn = new mysqli('thanapong.com', 'thanapon_5g', '', 'thanapon_5g');
+    
     $conn->set_charset('utf8');
 
     if($conn->connect_errno) {
