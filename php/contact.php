@@ -42,7 +42,7 @@
     }
     function notify_message($message) {
         define('LINE_API', "https://notify-api.line.me/api/notify");
-        define('LINE_TOKEN', "v4SytBrtv98fnFHfkQJKttk4fQDYUsTpze7qK1Vmul1");
+        define('LINE_TOKEN', "q3N4ME4FhS1v1J25lTNHlrMQxpsvFlKFbVc13MuwcFS");
         $queryData = http_build_query($message, '', '&');
         $headerOption = array(
             'http' => array(
@@ -61,7 +61,7 @@
             echo '<script> alert("ส่งข้อความเรียบร้อยแล้ว!") </script>';
             header('Refresh:0; url=../index.php');
         } else {
-            echo '<script> alert("ส่งข้อความไม่สำเร็จ โปรดติดต่อบอย") </script>';
+            echo '<script> alert("ส่งข้อความไม่สำเร็จ โปรดลองใหม่อีกครั้ง") </script>';
             header('Refresh:0; url=../contact.php');
         }
     }
