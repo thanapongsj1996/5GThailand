@@ -71,3 +71,19 @@
   </div>
 </div>
     </section>
+ <!-- Section Footer -->
+ <?php include_once 'include/footer.php'?>
+
+<!-- Section On to Top -->
+<div class="to-top">
+    <i class="fa fa-angle-up" aria-hidden="true"></i>
+</div>
+
+<script src="node_modules/jquery/dist/jquery.min.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+<script src="node_modules/jarallax/dist/jarallax.min.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+
+</html>
