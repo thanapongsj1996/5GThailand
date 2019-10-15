@@ -38,23 +38,7 @@
         </div>
     </header>
 
-    <!-- Section TODO -->
-    <section class="container py-5">
-        <div class="row">
-            <div class="col-lg-6 py-3 p-lg-0">
-                <br>
-                <div class="embed-responsive embed-responsive-16by9">
-                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/XZ0eScielS8" frameborder="0"
-                        allowfullscreen></iframe>
-                </div>
-            </div>
-            <div class="col-lg-6">
-                <h2><u>5G คืออะไร?</u></h2>
-                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;หากคุณคิดว่าอินเตอร์เน็ต 4G ในปัจจุบัน ยังช้าไม่สามารถตอบสนองต่อความต้องการที่รวดเร็วของคนในยุค 4.0 ได้อย่างเต็มที่ 5G คือคำตอบ แล้ว 5G คืออะไรหละ </p>
-                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5G ก็คือ เทคโนโลยีใหม่ที่จะเข้ามาแทน 4G ในอนาคต ซึ่ง 5G ไม่ได้พัฒนามาเพื่อการสื่อสารเฉพาะมนุษย์เพียงอย่างเดียวเท่านั้น แต่ยังพัฒนาเพื่อรองรับความต้องการในการติดต่อสื่อสารกับสิ่งต่างๆ เช่น ตู้เย็น เครื่องซักผ้า รถยนต์ รวมไปถึงอุปกรณ์ต่างๆในหน่วยงานขนาดใหญ่ทั้งภาคอุตสาหกรรม การขนส่ง เศรษฐกิจ และการเงิน เป็นต้น  ตัวอย่างที่เราเห็นอยู่ในปัจจุบันก็คือ เทคโนโลยี IOT คือเราสามารถสั่งการอุปกรณ์ต่างๆผ่านเครือข่ายอินเตอร์เน็ตได้ นอกจากนี้แล้วยังคาดการณ์เอาไว้ว่า ความเร็วในการรับส่งข้อมูลของเทคโนโลยี 5G จะมากกว่าเทคโนโลยี 4G ถึง 20 เท่า ดังนั้นเราจะยกตัวอย่างง่ายๆคือ คุณสามารถดาวน์โหลดเกมที่ขนาด 20 GB ได้ภายใน 2 นาทีหรือดาวน์โหลดหนัง ความชัดระดับ HD ได้ภายในเวลาไม่กี่วินาทีเท่านั้น คงรวดเร็วสมใจคนยุค 4.0 อย่างเราได้อย่างแน่นอน </p>
-            </div>
-        </div>
-    </section>
+    
 
     <!-- Section Timeline -->
     <section class="position-relative py-5 jarallax" data-jarallax='{"speed": 0.3}' style="background-image: url(https://images.unsplash.com/photo-1496065187959-7f07b8353c55?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80);">
