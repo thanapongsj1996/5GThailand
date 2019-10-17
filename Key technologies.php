@@ -33,7 +33,7 @@
     <!-- Section PageTitle -->
     <header class="jarallax" data-jarallax='{"speed": 0.3}' style="background-image: url(https://images.unsplash.com/photo-1473163928189-364b2c4e1135?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80);">
         <div class="page-image">
-            <h1 class="display-4 font-weight-bold">Use Cases</h1>
+            <h1 class="display-4 font-weight-bold">Key technologies</h1>
             <p class="lead">"5G Thailand ความรู้ไร้ขีดจำกัด"</p>
         </div>
     </header>
