@@ -25,8 +25,8 @@
                     <li class="nav-item <?php echo $file_name == 'Key technologies' ? 'active':''  ?>">
                         <a class="nav-link" href="Key technologies.php">&ensp;Key technologies &ensp;&ensp;|</a>
                     </li>
-                    <li class="nav-item <?php echo $file_name == '' ? 'active':''  ?>">
-                        <a class="nav-link" href="">&ensp;Training Courses &ensp;&ensp;|</a>
+                    <li class="nav-item <?php echo $file_name == 'Training Courses' ? 'active':''  ?>">
+                        <a class="nav-link" href="Training courses.php">&ensp;Training Courses &ensp;&ensp;|</a>
                     <li class="nav-item <?php echo $file_name == 'blog'|| $file_name == 'blog-detail' ? 'active':''  ?>">
                         <a class="nav-link" href="blog.php">&ensp;Blog &ensp;&ensp;|</a>
                     </li>
