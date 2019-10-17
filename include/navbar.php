@@ -17,18 +17,18 @@
                         <a class="nav-link" href="index.php">Home &ensp; |<span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item <?php echo $file_name == 'about' ? 'active':''  ?>">
-                        <a class="nav-link" href="about.php">&ensp;Road to 5G &ensp;|</a>
+                        <a class="nav-link" href="about.php">&ensp;Road to 5G &ensp;&ensp;|</a>
                     </li>
                     <li class="nav-item <?php echo $file_name == 'Uses case' ? 'active':''  ?>">
-                        <a class="nav-link" href="Uses cases.php">&ensp;Use cases &ensp;|</a>
+                        <a class="nav-link" href="Uses cases.php">&ensp;Use cases &ensp;&ensp;|</a>
                     </li>
                     <li class="nav-item <?php echo $file_name == '' ? 'active':''  ?>">
-                        <a class="nav-link" href="">&ensp;Key technologies &ensp;|</a>
+                        <a class="nav-link" href="">&ensp;Key technologies &ensp;&ensp;|</a>
                     </li>
                     <li class="nav-item <?php echo $file_name == '' ? 'active':''  ?>">
-                        <a class="nav-link" href="">&ensp;Training Courses &ensp;|</a>
+                        <a class="nav-link" href="">&ensp;Training Courses &ensp;&ensp;|</a>
                     <li class="nav-item <?php echo $file_name == 'blog'|| $file_name == 'blog-detail' ? 'active':''  ?>">
-                        <a class="nav-link" href="blog.php">&ensp;Blog &ensp;|</a>
+                        <a class="nav-link" href="blog.php">&ensp;Blog &ensp;&ensp;|</a>
                     </li>
                     <li class="nav-item <?php echo $file_name == 'contact' ? 'active':''  ?>">
                         <a class="nav-link" href="contact.php">&ensp;Contact </a>
