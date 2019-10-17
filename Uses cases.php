@@ -44,7 +44,7 @@
     <div class="card mb-3" style="max-width: 540px;">
   <div class="row no-gutters">
     <div class="col-md-4">
-      <img src="..." class="card-img" alt="...">
+      <img src="https://etimg.etb2bimg.com/photo/71598008.cms" class="card-img" alt="...">
     </div>
     <div class="col-md-8">
       <div class="card-body">
@@ -59,7 +59,7 @@
 <div class="card mb-3" style="max-width: 540px;">
   <div class="row no-gutters">
     <div class="col-md-4">
-      <img src="..." class="card-img" alt="...">
+      <img src="https://etimg.etb2bimg.com/photo/71598008.cms" class="card-img" alt="...">
     </div>
     <div class="col-md-8">
       <div class="card-body">
