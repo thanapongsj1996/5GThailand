@@ -22,6 +22,9 @@
                     <li class="nav-item <?php echo $file_name == 'Uses case' ? 'active':''  ?>">
                         <a class="nav-link" href="Uses cases.php">Use cases &ensp;|</a>
                     </li>
+                    <li class="nav-item <?php echo $file_name == '' ? 'active':''  ?>">
+                        <a class="nav-link" href="">Key technologies &ensp;|</a>
+                    </li>
                     <li class="nav-item <?php echo $file_name == 'blog'|| $file_name == 'blog-detail' ? 'active':''  ?>">
                         <a class="nav-link" href="blog.php">Blog &ensp;|</a>
                     </li>
