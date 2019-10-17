@@ -2,7 +2,7 @@
 <nav id="navbar" class="navbar navbar-expand-lg fixed-top navbar-dark bg-alpha">
         <div class="container">
             <a class="navbar-brand" href="index.php">
-                <img src="https://www.eng.chula.ac.th/wp-content/uploads/2018/01/logo.png" width="35" height="35" class="d-inline-block align-top"
+                <img src="https://www.eng.chula.ac.th/wp-content/uploads/2018/01/logo.png" width="40" height="40" class="d-inline-block align-top"
                     alt="">
                 5G Thailand
             </a>
