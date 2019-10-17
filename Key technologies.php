@@ -42,7 +42,7 @@
     <section class="container py-5">
     <div class="card-columns">
   <div class="card">
-    <img src="..." class="card-img-top" alt="...">
+    <img src="https://www.thefastmode.com/media/k2/items/src/a5ba713859dbcdfc73b104275d2fecd7.jpg" class="card-img-top" alt="...">
     <div class="card-body">
       <h5 class="card-title">Card title that wraps to a new line</h5>
       <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
@@ -60,7 +60,7 @@
     </blockquote>
   </div>
   <div class="card">
-    <img src="..." class="card-img-top" alt="...">
+    <img src="https://www.internetworld.de/img/1/0/3/4/4/0/4/5G_w856_h714.jpg" class="card-img-top" alt="...">
     <div class="card-body">
       <h5 class="card-title">Card title</h5>
       <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
@@ -87,7 +87,7 @@
     </div>
   </div>
   <div class="card">
-    <img src="..." class="card-img-top" alt="...">
+    <img src="https://i.ytimg.com/vi/MC_Sfkh5-zQ/hqdefault.jpg" class="card-img-top" alt="...">
   </div>
   <div class="card p-3 text-right">
     <blockquote class="blockquote mb-0">
