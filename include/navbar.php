@@ -21,8 +21,8 @@
                         <a class="nav-link" href="index.php">Road to 5G </a>
                     </li>
                     <li class="d-none d-md-inline nav-link">|</li>
-                    <li class="nav-item <?php echo $file_name == 'uses-cases' ? 'active':''  ?>">
-                        <a class="nav-link" href="uses-cases.php">Use cases </a>
+                    <li class="nav-item <?php echo $file_name == 'use-cases' ? 'active':''  ?>">
+                        <a class="nav-link" href="use-cases.php">Use cases </a>
                     </li>
                     <li class="d-none d-md-inline nav-link">|</li>
                     <li class="nav-item <?php echo $file_name == 'key-technologies' ? 'active':''  ?>">
@@ -30,7 +30,7 @@
                     </li>
                     <li class="d-none d-md-inline nav-link">|</li>
                     <li class="nav-item <?php echo $file_name == 'training-courses' ? 'active':''  ?>">
-                        <a class="nav-link" href="training-courses.php">Training Courses </a>
+                        <a class="nav-link" href="training-courses.php">Training courses </a>
                     </li>
                     <li class="d-none d-md-inline nav-link">|</li>
                     <li class="nav-item <?php echo $file_name == 'blog'|| $file_name == 'blog-detail' ? 'active':''  ?>">

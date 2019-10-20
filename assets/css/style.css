@@ -12,21 +12,21 @@
 */
 
 /* Section Settings */
-html, body{
+html, body {
     height: 100%;
     background: #F9F9F9;
     font-family: 'Prompt', sans-serif;
 }
-.bg-alpha{
+.bg-alpha {
     background: rgba(0, 0, 0 , 0.3)
 }
-.border-short-bottom{
+.border-short-bottom {
     position: relative;
     padding: 20px;
     margin-bottom: 25px;
     text-align: center;
 }
-.border-short-bottom::after{
+.border-short-bottom::after {
     position: absolute;
     content: "";
     width: 100px;
@@ -36,19 +36,19 @@ html, body{
     margin-left: -50px;
     background: #595959;
 }
-@media (max-width: 768px){
+@media (max-width: 768px) {
     .display-4 {
         font-size: 2.5rem;
     }
 }
 
  /* Navbar */
- #navbar{
+ #navbar {
      padding: 10px;
      transition: 0.5s;
  }
- @media(max-width: 480px){
-    .navbar-brand{
+ @media(max-width: 480px) {
+    .navbar-brand {
         font-size: 0.8rem;
         line-height: 2rem;
     }
@@ -58,103 +58,103 @@ html, body{
 .carousel,
 .carousel-inner,
 .carousel-item,
-.carousel-inner .active{
+.carousel-inner .active {
     height: 100%;
 }
-.carousel-img{
+.carousel-img {
     width: 100%;
     height: 100%;
     background-size: cover;
     background-position: center;
 }
-.carousel-caption{
+.carousel-caption {
     top: 40%;
 }
-.blackscreen{
+.blackscreen {
     background: rgba(0, 0, 0 , 0.3);
     height: 100%;
 }
 
 /* Section Hope */
-.hope{
+.hope {
     background: #D4D4D6;
 }
 
 /* Section Blog */
-.warpper-card-img{
+.warpper-card-img {
     position: relative;
     overflow: hidden;
 }
-.warpper-card-img::after{
+.warpper-card-img::after {
     content: '';
     padding-top: 56.25%;
     display: block;
     height: 0;
 }
-.warpper-card-img img{
+.warpper-card-img img {
     position: absolute;
     top: 0;
     transition: 0.2s;
 }
-.warpper-card-img img:hover{
+.warpper-card-img img:hover {
     transform: scale(1.1)
 }
-.blogbotton{
+.blogbotton {
     color: #F9F9F9;
     background: rgba(14, 23, 91, 0.9)
 }
-.blogbotton:hover{
+.blogbotton:hover {
     color: #F9F9F9;
     background: rgba(14, 23, 91, 1)
 }
-.card-contact{
+.card-contact {
     box-shadow: 1px 0px 7px #8888887d;
 }
-.btn-group-custom button{
+.btn-group-custom button {
     margin-bottom: 0.5rem;
     width: 120px;
 }
-.btn-group-custom a:hover{
+.btn-group-custom a:hover {
     text-decoration: none;
 }
 
-.blog-content{
+.blog-content {
     padding: 50px 100px;
     box-shadow: 0px 0px 10px #a5a5a5;
 }
-.owl-carousel .card-body{
+.owl-carousel .card-body {
     height: 150px;
     overflow: hidden;
 }
-@media(max-width: 991px){
-    .blog-content{
+@media(max-width: 991px) {
+    .blog-content {
         padding: 40px 50px;
     }
 }
-@media(max-width: 768px){
-    .blog-content{
+@media(max-width: 768px) {
+    .blog-content {
         padding: 20px 30px;
     }
 }
 
 
 /* Section Footer */
-.semi-footer{
+.semi-footer {
     background: #202021;
     color:#f9f9f9
 }
-.semi-footer a{
+.semi-footer a {
     color:#dcdcdc;
 }
-.semi-footer li.active > a{
+.semi-footer li.active > a {
     color:#FFFFFF;
 }
-.semi-footer h4{
+.semi-footer h4 {
     color: #D8D8D8;
     border-bottom: 1px solid;
     padding: 10px 0;
 }
-.footer{
+.footer {
     background: #000000;
     color: #D8D8D8;
     font-size: 0.7rem;
@@ -164,7 +164,7 @@ html, body{
 }
 
 /* Section Page-title */
-.page-image{
+.page-image {
     padding: 200px 0 120px;
     text-align: center;
     color: #E6E6E6;
@@ -172,7 +172,7 @@ html, body{
 }
 
 /* Section Timeline */
-.timeline{
+.timeline {
     list-style: none;
     position: relative;
     padding: 20px 0;
@@ -191,7 +191,7 @@ html, body{
     left: 50%;
     margin-left: -1px;
 }
-li > .timeline-badge{
+li > .timeline-badge {
     position: absolute;
     width: 18px;
     height: 18px;
@@ -203,7 +203,7 @@ li > .timeline-badge{
     box-shadow: 0 0 0 5px #e6e6e6;
     top: 15px;
 }
-li > .timeline-badge::before{
+li > .timeline-badge::before {
     content: "";
     position: absolute;
     top: 5px;
@@ -212,7 +212,7 @@ li > .timeline-badge::before{
     height: 2px;
     background: #E6E6E6;
 }
-li.inverted > .timeline-badge::before{
+li.inverted > .timeline-badge::before {
     right: -32px;
 }
 li > .timeline-badge p {
@@ -227,71 +227,71 @@ li.inverted > .timeline-badge p {
     text-align: right;
     margin-right: 25px;
 }
-li > .timeline-card{
+li > .timeline-card {
     position: relative;
     width: 46%;
     float: left;
     text-align: right;
     padding: 0 10px;
 }
-li.inverted > .timeline-card{
+li.inverted > .timeline-card {
     float: right;
     text-align: left;
 }
-.timeline > li::after{
+.timeline > li::after {
     content: "";
     clear: both;
     display: block;
 }
-.timeline-arrow{
+.timeline-arrow {
     width: 100%;
     text-align: center;
     bottom: -70px;
     color: #E6E6E6;
 }
-@media(max-width: 768px){
+@media(max-width: 768px) {
     .timeline::before,
-    .timeline-badge{
+    .timeline-badge {
         left: 40px !important;
     }
-    .timeline-badge::before{
+    .timeline-badge::before {
         right: -32px !important;
     }
     .timeline-badge p,
-    li.inverted > .timeline-badge p{
+    li.inverted > .timeline-badge p {
         margin-left: 50px !important;
         text-align: left;
         float: left;
     }
-    li > .timeline-card{
+    li > .timeline-card {
         width: 100%;
         text-align: left;
         padding: 37px 0 0 85px;
     }
-    .timeline-arrow{
+    .timeline-arrow {
         text-align: left;
         left: 0px;
     }
-    .timeline-arrow  > i{
+    .timeline-arrow  > i {
         margin-left: 32px;
     }
 }
 
 /* Section Star */
-.star-rating{
+.star-rating {
     position: relative;
     font-size: 2em;
     color: gold;
     display: inline-block;
 }
-.star-current{
+.star-current {
     position: absolute;
     top: 0;
     white-space: nowrap;
     overflow: hidden;
 }
 /* Section On to Top */
-.to-top{
+.to-top {
     position: fixed;
     bottom: 2%;
     right: 2%;
@@ -305,7 +305,7 @@ li.inverted > .timeline-card{
     cursor: pointer;
     text-align: center;
 }
-.to-top:hover{
+.to-top:hover {
     color: #FFFFFF;
     background: #414040;
 }

@@ -34,42 +34,113 @@
     <header class="jarallax" data-jarallax='{"speed": 0.3}' style="background-image: url(https://images.unsplash.com/photo-1473163928189-364b2c4e1135?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80);">
         <div class="page-image">
             <h1 class="display-4 font-weight-bold">Training courses</h1>
-            <p class="lead">"5G Thailand ความรู้ไร้ขีดจำกัด"</p>
+            <p class="lead">"ก้าวทันเทคโนโลยี ก้าวทันโลก"</p>
         </div>
     </header>
 
     <!-- Section Blog -->
+    <!-- <section class="container py-5">
+      <div class="card-group">
+        <div class="card">
+          <img src="https://www.techdonut.co.uk/sites/default/files/it//computerandsoftwaretraining_96602236.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="https://www.techdonut.co.uk/sites/default/files/it//computerandsoftwaretraining_96602236.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="https://www.techdonut.co.uk/sites/default/files/it//computerandsoftwaretraining_96602236.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+    <!-- Section Blog -->
     <section class="container py-5">
-    <div class="card-group">
-  <div class="card">
-    <img src="https://www.techdonut.co.uk/sites/default/files/it//computerandsoftwaretraining_96602236.jpg" class="card-img-top" alt="...">
-    <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-      <a href="#" class="btn btn-primary">Go somewhere</a>
-      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-    </div>
-  </div>
-  <div class="card">
-    <img src="https://www.techdonut.co.uk/sites/default/files/it//computerandsoftwaretraining_96602236.jpg" class="card-img-top" alt="...">
-    <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-      <a href="#" class="btn btn-primary">Go somewhere</a>
-      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-    </div>
-  </div>
-  <div class="card">
-    <img src="https://www.techdonut.co.uk/sites/default/files/it//computerandsoftwaretraining_96602236.jpg" class="card-img-top" alt="...">
-    <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-      <a href="#" class="btn btn-primary">Go somewhere</a>
-      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-    </div>
-  </div>
-</div>
+      <div class="row d-flex justify-content-center p-0">
+        <div class="col-12 my-1" style="max-width:800px;">
+          <a href="index.php" class="card mb-3" style="color: #212529; text-decoration: none;">
+            <div class="row no-gutters">
+              <div class="col-md-4 warpper-card-img">
+                <img src="https://images.unsplash.com/photo-1547658718-1cdaa0852790?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80" class="card-img" alt="...">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <p class="card-text"><small class="text-muted">Chulalongkorn University</small></p>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-12 my-1" style="max-width:800px;">
+          <a href="index.php" class="card mb-3" style="color: #212529; text-decoration: none;">
+            <div class="row no-gutters">
+              <div class="col-md-4 warpper-card-img">
+                <img src="https://images.unsplash.com/photo-1550355291-bbee04a92027?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=976&q=80" class="card-img" alt="...">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <p class="card-text"><small class="text-muted">Mahidol University</small></p>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-12 my-1" style="max-width:800px;">
+          <a href="index.php" class="card mb-3" style="color: #212529; text-decoration: none;">
+            <div class="row no-gutters">
+              <div class="col-md-4 warpper-card-img">
+                <img src="https://images.unsplash.com/photo-1490274494753-fd4f84681e7c?ixlib=rb-1.2.1&auto=format&fit=crop&w=934&q=80" class="card-img" alt="...">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <p class="card-text"><small class="text-muted">Chiangmai University</small></p>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-12 my-1" style="max-width:800px;">
+          <a href="index.php" class="card mb-3" style="color: #212529; text-decoration: none;">
+            <div class="row no-gutters">
+              <div class="col-md-4 warpper-card-img">
+                <img src="https://images.unsplash.com/photo-1516192518150-0d8fee5425e3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=976&q=80" class="card-img" alt="...">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <p class="card-text"><small class="text-muted">Chulalongkorn University</small></p>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
     </section>
+
  <!-- Section Footer -->
  <?php include_once 'include/footer.php'?>
 
