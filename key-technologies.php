@@ -25,9 +25,9 @@
     <link rel="stylesheet" href="assets/css/style.css">
 
     <!--link-->
-    <style>
+   <!-- <style>
       body {link='black'; vlink='blue' ; alink='green'}
-    </style>
+    </style> -->
     
 
 
@@ -119,7 +119,7 @@
         <div class="col mb-3">
           <h5 class="ml-5 mb-3">TEST1</h5>
           <ul>
-            <a class="mt-2">boyboyboydklnglsa;dfnvalksnf;kl</a>
+            <li class="mt-2">boyboyboydklnglsa;dfnvalksnf;kl</li>
             <li class="mt-2">boyboyboydklnglsa;dfnvalksnf;kl</li>
             <li class="mt-2">boyboyboydklnglsa;dfnvalksnf;kl</li>
             <li class="mt-2">boyboyboydklnglsa;dfnvalksnf;kl</li>
@@ -129,7 +129,6 @@
         <div class="col mb-3">
           <h5 class="ml-5 mb-3">TEST2</h5>
           <ul>
-            <a href=''>คลิกสิ๊</a>
             <li class="mt-2">boyboyboydklnglsa;dfnvalksnf;kl</li>
             <li class="mt-2">boyboyboydklnglsa;dfnvalksnf;kl</li>
             <li class="mt-2">boyboyboydklnglsa;dfnvalksnf;kl</li>
