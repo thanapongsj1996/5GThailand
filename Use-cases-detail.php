@@ -50,60 +50,7 @@ if(!$result){
 
     <!-- Section Blog -->
     <section class="container py-5">
-        <div class="row pb-4">
-            <div class="col-12 text-center">
-                <div class="btn-group-custom">
-                    <a href="blog.php?tag=all">
-                        <button class="btn btn-primary <?php echo $tag == 'all' ? 'active':'' ?>">ALL</button>
-                    </a>
-                    <a href="blog.php?tag=news">
-                        <button class="btn btn-primary <?php echo $tag == 'news' ? 'active':'' ?>">NEWS</button>
-                    </a>
-                    <a href="blog.php?tag=future">
-                        <button class="btn btn-primary <?php echo $tag == 'future' ? 'active':'' ?>">FUTURE</button>
-                    </a>
-                    <a href="blog.php?tag=society">
-                        <button class="btn btn-primary <?php echo $tag == 'society' ? 'active':'' ?>">SOCIETY</button>
-                    </a>
-                    <a href="blog.php?tag=iot">
-                        <button class="btn btn-primary <?php echo $tag == 'iot' ? 'active':'' ?>">IOT</button>
-                    </a>
-                    <a href="blog.php?tag=innovation">
-                        <button class="btn btn-primary <?php echo $tag == 'innovation' ? 'active':'' ?>">INNOVATION</button>
-                    </a>
-                    <a href="blog.php?tag=others">
-                        <button class="btn btn-primary <?php echo $tag == 'others' ? 'active':'' ?>">OTHERS</button>
-                    </a>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <?php 
-                if($result->num_rows){
-                while ($row = $result->fetch_assoc()) {
-            ?>
-                <section class="col-12 col-sm-6 col-md-4 p-2">
-                    <div class="card h-100">
-                        <a href="blog-detail.php?id=<?php echo $row['id'] ?>" class="warpper-card-img">
-                            <img class="card-img-top" src="<?php echo $base_path_blog.$row['image'] ?>" alt="Card image cap">
-                        </a>
-                        <div class="card-body">
-                            <h5 class="card-title"><?php echo $row['subject'] ?></h5>
-                            <p class="card-text"><?php echo $row['sub_title'] ?></p>
-                        </div>
-                        <div class="p-3">
-                            <a href="blog-detail.php?id=<?php echo $row['id'] ?>" class="btn btn-block blogbotton">อ่านเพิ่มเติม</a>
-                        </div>
-                    </div>
-                </section>
-            <?php }
-            } else {
-            ?>
-            <section class="col-12">
-                <p class="text-center">ไม่มีข้อมูล</p>
-            </section>
-            <?php } ?>
-        </div>
+   
     </section>
 
     
