@@ -43,7 +43,7 @@
 
     <div class="row p-0">
       <div class="col-12 col-lg-6 my-1">
-        <a href="index.php" class="card mb-3" style="color: #212529; text-decoration: none;">
+        <a href="Use-cases-detail.php" class="card mb-3" style="color: #212529; text-decoration: none;">
           <div class="row no-gutters">
             <div class="col-md-4 warpper-card-img">
               <img src="https://images.unsplash.com/photo-1547658718-1cdaa0852790?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80" class="card-img" alt="...">
@@ -59,7 +59,7 @@
         </a>
       </div>
       <div class="col-12 col-lg-6 my-1">
-        <a href="index.php" class="card mb-3" style="color: #212529; text-decoration: none;">
+        <a href="Use-cases-detail.php" class="card mb-3" style="color: #212529; text-decoration: none;">
           <div class="row no-gutters">
             <div class="col-md-4 warpper-card-img">
               <img src="https://images.unsplash.com/photo-1550355291-bbee04a92027?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=976&q=80" class="card-img" alt="...">
@@ -75,7 +75,7 @@
         </a>
       </div>
       <div class="col-12 col-lg-6 my-1">
-        <a href="index.php" class="card mb-3" style="color: #212529; text-decoration: none;">
+        <a href="Use-cases-detail.php" class="card mb-3" style="color: #212529; text-decoration: none;">
           <div class="row no-gutters">
             <div class="col-md-4 warpper-card-img">
               <img src="https://images.unsplash.com/photo-1490274494753-fd4f84681e7c?ixlib=rb-1.2.1&auto=format&fit=crop&w=934&q=80" class="card-img" alt="...">
@@ -91,7 +91,7 @@
         </a>
       </div>
       <div class="col-12 col-lg-6 my-1">
-        <a href="index.php" class="card mb-3" style="color: #212529; text-decoration: none;">
+        <a href="Use-cases-detail.php" class="card mb-3" style="color: #212529; text-decoration: none;">
           <div class="row no-gutters">
             <div class="col-md-4 warpper-card-img">
               <img src="https://images.unsplash.com/photo-1516192518150-0d8fee5425e3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=976&q=80" class="card-img" alt="...">
