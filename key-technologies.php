@@ -119,24 +119,24 @@
         <div class="col mb-3">
           <h5 class="ml-5 mb-3">TEST1</h5>
           <ul>
-            <li class="mt-2"><a href="Key-technologies-detail.php"style="text-decoration:none"><font color=black>boyboyboydklnglsa;dfnvalksnf;kl</font></a></li>
-            <li class="mt-2"><a href="Key-technologies-detail.php"style="text-decoration:none"><font color=black>boyboyboydklnglsa;dfnvalksnf;kl</font></a></li>
-            <li class="mt-2"><a href="Key-technologies-detail.php"style="text-decoration:none"><font color=black>boyboyboydklnglsa;dfnvalksnf;kl</font></a></li>
-            <li class="mt-2"><a href="Key-technologies-detail.php"style="text-decoration:none"><font color=black>boyboyboydklnglsa;dfnvalksnf;kl</font></a></li>
-            <li class="mt-2"><a href="Key-technologies-detail.php"style="text-decoration:none"><font color=black>boyboyboydklnglsa;dfnvalksnf;kl</font></a></li>
+            <li class="mt-2"><a href="key-technologies-detail.php"style="text-decoration:none"><font color=black>boyboyboydklnglsa;dfnvalksnf;kl</font></a></li>
+            <li class="mt-2"><a href="key-technologies-detail.php"style="text-decoration:none"><font color=black>boyboyboydklnglsa;dfnvalksnf;kl</font></a></li>
+            <li class="mt-2"><a href="key-technologies-detail.php"style="text-decoration:none"><font color=black>boyboyboydklnglsa;dfnvalksnf;kl</font></a></li>
+            <li class="mt-2"><a href="key-technologies-detail.php"style="text-decoration:none"><font color=black>boyboyboydklnglsa;dfnvalksnf;kl</font></a></li>
+            <li class="mt-2"><a href="key-technologies-detail.php"style="text-decoration:none"><font color=black>boyboyboydklnglsa;dfnvalksnf;kl</font></a></li>
           </ul>
         </div>
         <div class="col mb-3">
           <h5 class="ml-5 mb-3">TEST2</h5>
           <ul>
-          <li class="mt-2"><a href="Key-technologies-detail.php"style="text-decoration:none"><font color=black>boyboyboydklnglsa;dfnvalksnf;kl</font></a></li>
-          <li class="mt-2"><a href="Key-technologies-detail.php"style="text-decoration:none"><font color=black>boyboyboydklnglsa;dfnvalksnf;kl</font></a></li>
-          <li class="mt-2"><a href="Key-technologies-detail.php"style="text-decoration:none"><font color=black>boyboyboydklnglsa;dfnvalksnf;kl</font></a></li>
-          <li class="mt-2"><a href="Key-technologies-detail.php"style="text-decoration:none"><font color=black>boyboyboydklnglsa;dfnvalksnf;kl</font></a></li>
-          <li class="mt-2"><a href="Key-technologies-detail.php"style="text-decoration:none"><font color=black>boyboyboydklnglsa;dfnvalksnf;kl</font></a></li>
-          <li class="mt-2"><a href="Key-technologies-detail.php"style="text-decoration:none"><font color=black>boyboyboydklnglsa;dfnvalksnf;kl</font></a></li>
-          <li class="mt-2"><a href="Key-technologies-detail.php"style="text-decoration:none"><font color=black>boyboyboydklnglsa;dfnvalksnf;kl</font></a></li>
-          <li class="mt-2"><a href="Key-technologies-detail.php"style="text-decoration:none"><font color=black>boyboyboydklnglsa;dfnvalksnf;kl</font></a></li>
+          <li class="mt-2"><a href="key-technologies-detail.php"style="text-decoration:none"><font color=black>boyboyboydklnglsa;dfnvalksnf;kl</font></a></li>
+          <li class="mt-2"><a href="key-technologies-detail.php"style="text-decoration:none"><font color=black>boyboyboydklnglsa;dfnvalksnf;kl</font></a></li>
+          <li class="mt-2"><a href="key-technologies-detail.php"style="text-decoration:none"><font color=black>boyboyboydklnglsa;dfnvalksnf;kl</font></a></li>
+          <li class="mt-2"><a href="key-technologies-detail.php"style="text-decoration:none"><font color=black>boyboyboydklnglsa;dfnvalksnf;kl</font></a></li>
+          <li class="mt-2"><a href="key-technologies-detail.php"style="text-decoration:none"><font color=black>boyboyboydklnglsa;dfnvalksnf;kl</font></a></li>
+          <li class="mt-2"><a href="key-technologies-detail.php"style="text-decoration:none"><font color=black>boyboyboydklnglsa;dfnvalksnf;kl</font></a></li>
+          <li class="mt-2"><a href="key-technologies-detail.php"style="text-decoration:none"><font color=black>boyboyboydklnglsa;dfnvalksnf;kl</font></a></li>
+          <li class="mt-2"><a href="key-technologies-detail.php"style="text-decoration:none"><font color=black>boyboyboydklnglsa;dfnvalksnf;kl</font></a></li>
           </ul>
         </div>
       </div>
